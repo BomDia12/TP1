@@ -4,10 +4,10 @@
 class Name {
     private:
         std::string value;
-        void validate(string n);
+        void validate(std::string n);
 
     public:
-        Name(string n);
-        void setName(string n);
-        string getName();
+        Name(std::string n);
+        void setName(std::string n);
+        std::string getName();
 };
