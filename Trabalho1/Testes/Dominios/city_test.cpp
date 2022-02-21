@@ -1,13 +1,13 @@
-#include <iostream>
 #include <string>
-#include "name_test.hpp"
+#include <iostream>
+#include "city_test.hpp"
 using namespace std;
 
-void test_block(string test_name) {
-    try {
-        Name *obj;
-        cout << "Nome testado: " << test_name << endl << endl;
-        obj = new Name(test_name);
+void test_block(string name) {
+     try {
+        City *obj;
+        cout << "Nome testado: " << name << endl << endl;
+        obj = new City(name);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getName() << endl;
     } catch(invalid_argument& message) {
@@ -15,17 +15,17 @@ void test_block(string test_name) {
         cout << "Mensagem de erro: " << message.what() << endl;
     }
     cout << "\n==============================\n\n";
-};
+}
 
 int main () {
 
-    cout << "Testando com nome válido" << endl;
+    cout << "Testando valor válido:" << endl;
 
-    test_block("Bom. Dia.");
+    test_block("Bangkok");
 
-    cout << "Testando com nome inválido" << endl;
+    cout << "Testando valor inválido:" << endl;
 
-    test_block("Bom. dia");
+    test_block("Bom dia");
 
     return 0;
-};
+}
