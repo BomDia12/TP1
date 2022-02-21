@@ -3,3 +3,4 @@
 *.gc*
 latex
 html
+*.out
