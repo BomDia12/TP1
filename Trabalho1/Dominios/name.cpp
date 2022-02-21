@@ -3,10 +3,15 @@
 #include <ctype.h>
 #include <iostream>
 #include <string>
+#include <regex>
 using namespace std;
 
 void Name::validate(string n) {
     int size = n.size();
+
+    if (!regex_match(n, regex("[a-zA-Z .]*")))
+        throw invalid_argument("Só pode conter letras pontos e espaços");
+
     if (size < 5 || size > 20)
         throw invalid_argument("Nome não está entre 5 e 20 caracteres");
     
