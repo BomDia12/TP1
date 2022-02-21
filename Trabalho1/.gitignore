@@ -4,3 +4,4 @@
 latex
 html
 *.out
+.vscode
