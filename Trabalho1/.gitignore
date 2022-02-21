@@ -3,3 +3,5 @@
 *.gc*
 latex
 html
+*.out
+.vscode
