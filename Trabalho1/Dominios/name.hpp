@@ -11,3 +11,12 @@ class Name {
         void setName(std::string n);
         std::string getName();
 };
+
+inline std::string Name::getName() {
+    return value;
+}
+
+inline void Name::setName(std::string n) {
+    validate(n);
+    value = n;
+}
