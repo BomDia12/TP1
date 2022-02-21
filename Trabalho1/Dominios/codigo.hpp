@@ -3,14 +3,14 @@ using namespace std;
 
 class Codigo {
     private:
-        unsigned int codigo;
-        void validate(unsigned int codigo);
+        string codigo;
+        void validate(string codigo);
     public:
-        Codigo(unsigned int codigo);
-        unsigned int getCodigo();
-        void setCodigo(unsigned int codigo);
+        Codigo(string codigo);
+        string getCodigo();
+        void setCodigo(string codigo);
 };
 
-inline unsigned int Codigo::getCodigo() {
+inline string Codigo::getCodigo() {
     return codigo;
 }
