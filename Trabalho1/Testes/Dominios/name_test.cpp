@@ -21,11 +21,11 @@ int main () {
 
     cout << "Testando com nome válido" << endl;
 
-    test_block("Bom Dia.");
+    test_block("Bom. Dia.");
 
     cout << "Testando com nome inválido" << endl;
 
-    test_block("B.  dia");
+    test_block("Bom . dia");
 
     return 0;
 };
