@@ -24,7 +24,7 @@ int main () {
 
     cout << "Testando com nome inválido" << endl;
 
-    test_block("Bom . dia");
+    test_block("Bom. dia");
 
     return 0;
 };
