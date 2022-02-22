@@ -3,6 +3,8 @@ using namespace std;
 
 /**
  * Classe para armazenar o valor das datas e conferir se elas estão válidas
+ * 
+ * @author Arthur Mota Furtado - 200014935
  */
 class Date {
     private:
