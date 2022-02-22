@@ -12,5 +12,8 @@ date.o: date.cpp date.hpp
 name.o: name.cpp name.hpp
 	g++ -std=c++17 -Wall -c name.cpp
 
+time.o: time.cpp time.cpp
+	g++ -std=c++17 -Wall -c time.cpp
+
 clean:
 	rm -rf *.o *.exe
