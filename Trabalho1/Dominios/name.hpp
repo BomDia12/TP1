@@ -10,14 +10,28 @@ class Name {
         void validate(std::string n);
     public:
         /**
-         * Cria um novo nome caso o valor 
+         * Cria um novo nome caso o valor seja válido
          * 
-         * @param n 
+         * @param n nome a ser inserido na classe inicializada caso seja um nome válido
          *
          * @throw invalid_argument com a descrição do erro
          */
         Name(std::string n);
+
+        /**
+         * Troca o nome para o valor inserido, caso ele seja válido
+         * 
+         * @param n nome a ser inserido na classe inicializada caso seja um nome válido
+         *
+         * @throw invalid_argument com a descrição do erro
+         */
         void setName(std::string n);
+
+        /**
+         * Retorna o nome armazenado no objeto
+         * 
+         * @return string com o nome de objeto
+         */
         std::string getName();
 };
 
