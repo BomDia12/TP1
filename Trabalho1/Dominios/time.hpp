@@ -5,11 +5,15 @@ using namespace std;
 
 class Time {
     private:
-        string horario;
-        bool validate(string horario);
+        string time;
+        bool validate(string time);
     public:
-        Time(string horario);
+        Time(string time);
         string getTime();
-        void setTime(string horario);
+        void setTime(string time);
 
 };
+
+inline string Time::getTime() {
+    return time;
+}
