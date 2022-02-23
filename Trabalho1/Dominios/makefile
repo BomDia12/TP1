@@ -1,4 +1,4 @@
-all: name.o codigo.o city.o date.o duration.o
+all: name.o codigo.o city.o date.o nota.o duration.o
 
 codigo.o: codigo.cpp codigo.hpp
 	g++ -std=c++17 -Wall -c codigo.cpp
@@ -17,3 +17,4 @@ duration.o: duration.cpp duration.hpp
 
 clean:
 	rm -rf *.o *.exe
+
