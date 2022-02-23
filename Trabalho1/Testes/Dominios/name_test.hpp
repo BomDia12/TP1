@@ -2,4 +2,4 @@
 #include <string>
 using namespace std;
 
-void test_case(string);
+void test_case(string name);
