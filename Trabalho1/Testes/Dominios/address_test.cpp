@@ -1,15 +1,15 @@
 #include <string>
 #include <iostream>
-#include "duration_test.hpp"
+#include "address_test.hpp"
 using namespace std;
 
-void test_block(int value) {
+void test_block(string value) {
      try {
-        Duration *obj;
+        Address *obj;
         cout << "Valor testado: " << value << endl << endl;
-        obj = new Duration(value);
+        obj = new Address(value);
         cout << "Valor aceito!" << endl;
-        cout << "O valor atual é: " << obj->getDuration() << endl;
+        cout << "O valor atual é: " << obj->getAddress() << endl;
     } catch(invalid_argument& message) {
         cout << "Valor rejeitado!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
@@ -21,11 +21,15 @@ int main () {
 
     cout << "Testando valor válido:" << endl;
 
-    test_block(60);
+    test_block("Serra de Arga");
 
     cout << "Testando valor inválido:" << endl;
 
-    test_block(15);
+    test_block("Serra de Arga  ");
+
+    cout << "Testando valor inválido:" << endl;
+
+    test_block("Serra de Arga..");
 
     return 0;
 }
