@@ -1,4 +1,4 @@
-all: name_test codigo_test city_test date_test
+all: name_test codigo_test city_test date_test duration_test
 
 codigo_test: codigo_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/codigo.o codigo_test.cpp -o codigo_test.exe
@@ -11,3 +11,6 @@ city_test: city_test.cpp
  
 date_test: date_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/date.o date_test.cpp -o date_test.exe
+
+duration_test: duration_test.cpp
+	g++ -std=c++17 -Wall ../../Dominios/duration.o duration_test.cpp -o duration_test.exe
