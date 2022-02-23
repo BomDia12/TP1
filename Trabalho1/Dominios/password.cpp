@@ -1,18 +1,22 @@
 #include <string>
 #include <iostream>
-#include "description.hpp"
+#include "password.hpp"
+#include <regex>
 using namespace std;
 
-Description::Description(string value) {
+Password::Password(string value) {
     validate(value);
     this->value = value;
 }
 
-void Description::validate(string value) {
+void Password::validate(string value) {
     int size = value.size();
 
-    if (size < 0 || size > 30)
-        throw invalid_argument("Descrição não está entre 0 e 30 caracteres.");
+    if (size != 6)
+        throw invalid_argument("Senha não esta no formato XXXXXX");
+
+    if (!regex_match(value, regex("[a-zA-Z0-9]*")))
+        throw invalid_argument("Só pode conter letras e números");
 
     for (int i = 0; i < size; i++) {
 
