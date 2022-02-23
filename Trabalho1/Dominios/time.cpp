@@ -23,7 +23,6 @@ void Time::validate (string time) {
     else { 
         int hour = stoi(time.substr(0, 2));
         int minutes = stoi(time.substr(3, 2));
-        cout << minutes << endl;
 
         if (hour < 0 || hour > 23)
             throw invalid_argument("Horas devem estar entre 00 e 23");
