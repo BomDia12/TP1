@@ -6,7 +6,7 @@ using namespace std;
 class Time {
     private:
         string time;
-        bool validate(string time);
+        void validate(string time);
     public:
         Time(string time);
         string getTime();
