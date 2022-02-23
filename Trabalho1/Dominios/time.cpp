@@ -27,7 +27,7 @@ void Time::validate (string time) {
             throw invalid_argument("Horas devem estar entre 00 e 23");
         
         if (minutes < 0 || minutes > 59)
-            throw invalid_argument("minutps devem estar entre 00 e 59");
+            throw invalid_argument("minutos devem estar entre 00 e 59");
     }
 
 }
