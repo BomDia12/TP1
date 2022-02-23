@@ -30,5 +30,13 @@ int main () {
 
     test_block("23:60");
 
+    cout << "Testando com data inválida" << endl;
+
+    test_block("23-60");
+
+    cout << "Testando com data inválida" << endl;
+
+    test_block("023:50");
+
     return 0;
 };
