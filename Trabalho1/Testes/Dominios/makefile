@@ -1,4 +1,4 @@
-all: name_test codigo_test city_test date_test
+all: name_test codigo_test city_test date_test time_test
 
 codigo_test: codigo_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/codigo.o codigo_test.cpp -o codigo_test.exe

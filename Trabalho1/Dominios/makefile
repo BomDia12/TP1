@@ -1,4 +1,4 @@
-all: name.o codigo.o city.o date.o
+all: name.o codigo.o city.o date.o time.o
 
 codigo.o: codigo.cpp codigo.hpp
 	g++ -std=c++17 -Wall -c codigo.cpp
