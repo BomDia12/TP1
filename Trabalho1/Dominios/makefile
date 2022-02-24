@@ -15,7 +15,7 @@ name.o: name.cpp name.hpp
 duration.o: duration.cpp duration.hpp
 	g++ -std=c++17 -Wall -c duration.cpp
 
-duration.o: description.cpp description.hpp
+description.o: description.cpp description.hpp
 	g++ -std=c++17 -Wall -c description.cpp
 
 clean:
