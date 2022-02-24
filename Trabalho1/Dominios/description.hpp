@@ -1,3 +1,5 @@
+#ifndef DESCRIPTION
+#define DESCRIPTION
 #include <string>
 using namespace std;
 
@@ -21,3 +23,5 @@ inline void Description::setDescription(string value) {
     validate(value);
     this->value = value;
 };
+
+#endif

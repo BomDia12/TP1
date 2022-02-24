@@ -26,3 +26,7 @@ void Codigo::validate (string codigo) {
     if (codigo.substr(0, 6) == "000000")
         throw invalid_argument("O código 000000 não é válido");
 }
+
+Codigo::Codigo() {
+    codigo = "1234561";
+}

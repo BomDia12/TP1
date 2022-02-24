@@ -1,3 +1,5 @@
+#ifndef REVIEW
+#define REVIEW
 #include "../Dominios/nota.hpp"
 #include "../Dominios/codigo.hpp"
 #include "../Dominios/description.hpp"
@@ -9,13 +11,21 @@ class Review {
         Codigo codigo;
         Description description;
     public:
+        // Constructors
+        Review();
         Review(Codigo);
         Review(Codigo, Nota);
         Review(Codigo, Nota, Description);
-        string getNota();
+
+        // Get Methods
         string getCodigo();
-        Description getDescription();
-        void setNota();
-        void setCodigo();
-        void setDescription();
+        unsigned int getNota();
+        string getDescription();
+
+        // Set Methods
+        void setCodigo(string);
+        void setNota(unsigned int);
+        void setDescription(string);
 };
+
+#endif

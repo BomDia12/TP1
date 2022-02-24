@@ -1,3 +1,5 @@
+#ifndef CODIGO
+#define CODIGO
 #include <string>
 using namespace std;
 
@@ -15,3 +17,5 @@ class Codigo {
 inline string Codigo::getCodigo() {
     return codigo;
 }
+
+#endif

@@ -25,3 +25,7 @@ void Description::validate(string value) {
 
     }
 }
+
+Description::Description() {
+    value = "Descricao Padrao";
+}

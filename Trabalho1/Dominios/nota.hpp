@@ -1,3 +1,5 @@
+#ifndef NOTA
+#define NOTA
 /**
  * Classe que implementa a nota e checa se o valor é válido
  * 
@@ -40,3 +42,5 @@ class Nota {
 inline unsigned int Nota::getNota() {
     return nota;
 }
+
+#endif
