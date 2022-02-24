@@ -1,6 +1,6 @@
 all: name_test.o codigo_test.o city_test.o date_test.o time_test.o  \
      duration_test.o nota_test.o description_test.o language_test.o \
-	 password_test.o #address_test
+	 password_test.o address_test.o
 
 
 codigo_test.o: codigo_test.cpp
@@ -27,7 +27,7 @@ nota_test.o: nota_test.cpp
 description_test.o: description_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/description.o description_test.cpp
 
-address_test: address_test.cpp
+address_test.o: address_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/address.o address_test.cpp
 
 language_test.o: language_test.cpp
