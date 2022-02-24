@@ -16,7 +16,7 @@ void Codigo::setCodigo (string codigo) {
 void Codigo::validate (string codigo) {
     if (codigo.length() != 7)
         throw invalid_argument("Código tem que ter 7 dígitos");
-    
+
     int digit_sum = (codigo[0] - '0') + (codigo[1] - '0') + (codigo[2] - '0') +
                     (codigo[3] - '0') + (codigo[4] - '0') + (codigo[5] - '0');
     

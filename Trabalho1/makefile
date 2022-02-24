@@ -19,8 +19,10 @@ all:
 						  ./Dominios/duration.o				   	\
 						  ./Testes/Dominios/description_test.o 	\
 						  ./Dominios/description.o			   	\
-						  ./Testes/Dominios/password_test.o 	\
-						  ./Dominios/password.o			  	 	\
+						  ./Teste/Dominios/address_test.o	   	\
+						  ./Dominios/address.o					\
+						  ./Teste/Dominios/password_test.o	   	\
+						  ./Dominios/password.o					\
 						   main.cpp -o main.exe
 
 clean:

@@ -3,15 +3,6 @@
 #include "password_test.hpp"
 using namespace std;
 
-void PasswordTest::set_up() {
-    password = new Password("Pedro1");
-    estado = success;
-}
-
-void PasswordTest::tear_down() {
-    delete password;
-}
-
 int PasswordTest::run() {
     set_up();
     successful_test_block("Pedro1");
@@ -19,6 +10,15 @@ int PasswordTest::run() {
     tear_down();
 
     return 0;
+}
+
+void PasswordTest::set_up() {
+    password = new Password("Pedro1");
+    estado = success;
+}
+
+void PasswordTest::tear_down() {
+    delete password;
 }
 
 void PasswordTest::successful_test_block(string password) {

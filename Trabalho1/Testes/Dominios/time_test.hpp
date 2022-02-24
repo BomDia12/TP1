@@ -1,17 +1,17 @@
-#include "../../Dominios/name.hpp"
+#include "../../Dominios/time.hpp"
 #include <string>
 using namespace std;
 
-class NameTest {
+class TimeTest {
     private:
         inline static const int sucess = 0;
         inline static const int failure = 1;
         int estado;
-        Name *name;
+        Time *time;
         void tear_down();
         void set_up();
-        void sucessful_test_block(string name);
-        void failure_test_block(string name);
+        void sucessful_test_block(string time);
+        void failure_test_block(string time);
     public:
         int run();
 };

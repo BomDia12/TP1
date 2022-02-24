@@ -15,15 +15,49 @@ void test_block(unsigned int nota) {
     cout << "\n==============================\n\n";
 };
 
-int main () {
+void NotaTest::set_up() {
+    nota = new Nota(1);
+    estado = sucess;
+}
 
-    cout << "Testando com nome válido" << endl;
+void NotaTest::tear_down() {
+    delete nota;
+}
 
-    test_block(5);
+int NotaTest::run() {
+    set_up();
+    sucessful_test_block(5);
+    failure_test_block(6);
 
-    cout << "Testando com nome inválido" << endl;
+    return estado;
+}
 
-    test_block(6);
+void NotaTest::sucessful_test_block(unsigned int nota) {
+    cout << "Testando valor válido" << endl;
+    try {
+        cout << "Valor testado: " << nota << endl << endl;
+        this->nota->setNota(nota);
+        cout << "Valor aceito!" << endl;
+        cout << "O valor atual é: " << this->nota->getNota() << endl;
+    } catch(invalid_argument& message) {
+        cout << "Valor rejeitado!" << endl;
+        cout << "Mensagem de erro: " << message.what() << endl;
+        estado = failure;
+    }
+    cout << "\n==============================\n\n";
+}
 
-    return 0;
-};
+void NotaTest::failure_test_block(unsigned int nota) {
+    cout << "Testando valor inválido" << endl;
+    try {
+        cout << "Valor testado: " << nota << endl << endl;
+        this->nota->setNota(nota);
+        cout << "Valor aceito!" << endl;
+        cout << "O valor atual é: " << this->nota->getNota() << endl;
+        estado = failure;
+    } catch(invalid_argument& message) {
+        cout << "Valor rejeitado!" << endl;
+        cout << "Mensagem de erro: " << message.what() << endl;
+    }
+    cout << "\n==============================\n\n";
+}

@@ -1,31 +1,37 @@
-all: name_test codigo_test name_test city_test date_test duration_test nota_test description_test address_test password_test
+all: name_test codigo_test city_test date_test time_test duration_test nota_test description_test language_test address_test password_test
 
 codigo_test: codigo_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/codigo.o codigo_test.cpp -o codigo_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/codigo.o codigo_test.cpp
 
 name_test: name_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/name.o name_test.cpp -o name_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/name.o name_test.cpp
 
 city_test: city_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/city.o city_test.cpp -o city_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/city.o city_test.cpp
 
 date_test: date_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/date.o date_test.cpp -o date_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/date.o date_test.cpp
+
+time_test: time_test.cpp
+	g++ -std=c++17 -Wall -c ../../Dominios/time.o time_test.cpp
 
 duration_test: duration_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/duration.o duration_test.cpp -o duration_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/duration.o duration_test.cpp
 
 nota_test: nota_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/nota.o nota_test.cpp -o nota_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/nota.o nota_test.cpp
 
 description_test: description_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/description.o description_test.cpp -o description_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/description.o description_test.cpp
 
 address_test: address_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/address.o address_test.cpp -o address_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/address.o address_test.cpp
+
+language_test: language_test.cpp
+	g++ -std=c++17 -Wall -c ../../Dominios/language.o language_test.cpp
 
 password_test: password_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/password.o password_test.cpp -o password_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/password.o password_test.cpp
 
 clean:
 	rm -rf *.o *.exe
