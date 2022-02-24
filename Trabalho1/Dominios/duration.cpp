@@ -1,7 +1,6 @@
 #include <string>
 #include <iostream>
 #include "duration.hpp"
-#include <regex>
 using namespace std;
 
 Duration::Duration(int value) {

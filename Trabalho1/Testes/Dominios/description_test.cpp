@@ -8,6 +8,7 @@ int DescriptionTest::run() {
     sucessful_test_block("Civilizações castrejas");
     failure_test_block("Civilizações castrejas  ");
     failure_test_block("Civilizações castrejas..");
+    tear_down();
 
     return estado;
 }

@@ -36,4 +36,12 @@ int main() {
     DescriptionTest description = DescriptionTest();
     if (description.run())
         return 1;
+
+    AddressTest address = AddressTest();
+    if (address.run())
+        return 1;
+
+    PasswordTest password = PasswordTest();
+    if (password.run())
+        return 1;
 }
