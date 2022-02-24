@@ -1,4 +1,5 @@
-all: name_test codigo_test city_test date_test time_test duration_test nota_test description_test #address_test
+all: name_test codigo_test city_test date_test time_test duration_test nota_test description_test language_test #address_test
+
 
 codigo_test: codigo_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/codigo.o codigo_test.cpp -o codigo_test.exe
@@ -26,6 +27,9 @@ description_test: description_test.cpp
 
 #address_test: address_test.cpp
 #	g++ -std=c++17 -Wall ../../Dominios/address.o address_test.cpp -o address_test.exe
+
+language_test: language_test.cpp
+	g++ -std=c++17 -Wall ../../Dominios/language.o language_test.cpp -o language_test.exe
 
 clean:
 	rm -rf *.o *.exe
