@@ -8,4 +8,8 @@ int main() {
     NotaTest nota = NotaTest();
     if (nota.run())
         return 1;
+
+    NameTest name = NameTest();
+    if (name.run())
+        return 1;
 }

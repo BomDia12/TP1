@@ -5,6 +5,8 @@ all:
 	 					  ./Dominios/time.o			    \
 						  ./Testes/Dominios/nota_test.o \
 						  ./Dominios/nota.o				\
+						  ./Testes/Dominios/name_test.o \
+						  ./Dominios/name.o				\
 						   main.cpp -o main.exe
 
 clean:
