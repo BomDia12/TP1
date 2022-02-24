@@ -9,6 +9,8 @@ all:
 						  ./Dominios/name.o				       	\
 						  ./Testes/Dominios/date_test.o			\
 						  ./Dominios/date.o						\
+						  ./Testes/Dominios/city_test.o			\
+						  ./Dominios/city.o						\
 						  ./Testes/Dominios/codigo_test.o		\
 						  ./Dominios/codigo.o					\
 						  ./Testes/Dominios/language_test.o    	\

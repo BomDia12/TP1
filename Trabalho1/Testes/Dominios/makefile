@@ -8,7 +8,7 @@ name_test: name_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/name.o name_test.cpp
 
 city_test: city_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/city.o city_test.cpp -o city_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/city.o city_test.cpp
 
 date_test: date_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/date.o date_test.cpp

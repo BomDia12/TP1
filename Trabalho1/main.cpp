@@ -16,6 +16,10 @@ int main() {
     DateTest date = DateTest();
     if (date.run())
         return 1;
+    
+    CityTest city = CityTest();
+    if (city.run())
+        return 1;
 
     CodigoTest codigo = CodigoTest();
     if (codigo.run())
