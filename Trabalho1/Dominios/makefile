@@ -18,6 +18,9 @@ duration.o: duration.cpp duration.hpp
 description.o: description.cpp description.hpp
 	g++ -std=c++17 -Wall -c description.cpp
 
+nota.o: nota.cpp nota.hpp
+	g++ -std=c++17 -Wall -c nota.cpp
+
 clean:
 	rm -rf *.o *.exe
 
