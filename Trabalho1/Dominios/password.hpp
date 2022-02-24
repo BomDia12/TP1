@@ -7,10 +7,13 @@ class Password {
         void validate(string value);
 
     public:
+        Password();
         Password(string value);
         string getPassword();
         void setPassword(string value);
 };
+
+inline Password::Password(){};
 
 inline string Password::getPassword() {
     return value;

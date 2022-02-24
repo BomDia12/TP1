@@ -7,6 +7,7 @@ class Address {
         void validate(string value);
 
     public:
+        Address();
         Address(string value);
         string getAddress();
         void setAddress(string value);

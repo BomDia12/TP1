@@ -22,3 +22,5 @@ class Language {
 inline string Language::getLanguage() {
     return language;
 }
+
+inline Language::Language() {};

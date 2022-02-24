@@ -8,6 +8,7 @@ class Title {
         string title;
         void validate(string title);
     public:
+        Title();
         Title(string title);
         string getTitle();
         void setTitle(string title);
@@ -17,3 +18,5 @@ class Title {
 inline string Title::getTitle() {
     return title;
 }
+
+inline Title::Title(){};

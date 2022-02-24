@@ -24,3 +24,5 @@ void Address::validate(string value) {
 
     }
 }
+
+Address::Address() {}

@@ -73,3 +73,5 @@ class Date {
          */
         void setDate(string date);
 };
+
+inline Date::Date() {};

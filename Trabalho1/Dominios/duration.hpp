@@ -24,3 +24,5 @@ inline void Duration::setDuration(int value) {
     validate(value);
     this->value = value;
 };
+
+inline Duration::Duration() {};

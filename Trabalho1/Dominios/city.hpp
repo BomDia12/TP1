@@ -25,3 +25,5 @@ inline void City::setName(string name) {
     validate(name);
     this->name = name;
 }
+
+inline City::City() {};

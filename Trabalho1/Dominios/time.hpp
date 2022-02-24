@@ -18,3 +18,5 @@ class Time {
 inline string Time::getTime() {
     return time;
 }
+
+inline Time::Time(){};
