@@ -1,38 +1,52 @@
-#include <iostream>
 #include <string>
+#include <iostream>
 #include "password_test.hpp"
 using namespace std;
 
-void test_block(string test_password) {
+void PasswordTest::set_up() {
+    password = new Password("Pedro1");
+    estado = success;
+}
+
+void PasswordTest::tear_down() {
+    delete password;
+}
+
+int PasswordTest::run() {
+    set_up();
+    successful_test_block("Pedro1");
+    failure_test_block("Peedro");
+    tear_down();
+
+    return 0;
+}
+
+void PasswordTest::successful_test_block(string password) {
+    cout << "Testando valor válido" << endl;
     try {
-        cout << "Nome testado: " << test_password << endl << endl;
-        Password obj = Password(test_password);
+        cout << "Horario testado: " << password << endl << endl;
+        this->password->setPassword(password);
         cout << "Valor aceito!" << endl;
-        cout << "O valor atual é: " << obj.getPassword() << endl;
+        cout << "O valor atual é: " << this->password->getPassword() << endl;
+    } catch(invalid_argument& message) {
+        cout << "Valor rejeitado!" << endl;
+        cout << "Mensagem de erro: " << message.what() << endl;
+        estado = failure;
+    }
+    cout << "\n==============================\n\n";
+}
+
+void PasswordTest::failure_test_block(string password) {
+    cout << "Testando valor inválido" << endl;
+    try {
+        cout << "Horario testado: " << password << endl << endl;
+        this->password->setPassword(password);
+        cout << "Valor aceito!" << endl;
+        cout << "O valor atual é: " << this->password->getPassword() << endl;
+        estado = failure;
     } catch(invalid_argument& message) {
         cout << "Valor rejeitado!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
     }
     cout << "\n==============================\n\n";
-};
-
-int main () {
-
-    cout << "Testando com senha válida" << endl;
-
-    test_block("Pedro1");
-
-    cout << "Testando com senha inválida" << endl;
-
-    test_block("pedro1");
-
-    cout << "Testando com senha inválida" << endl;
-
-    test_block("Pedro12");
-
-    cout << "Testando com senha inválida" << endl;
-
-    test_block("Peedro");
-
-    return 0;
-};
+}
