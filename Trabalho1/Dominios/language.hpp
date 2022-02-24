@@ -7,10 +7,15 @@ class Language {
     private:
         string language;
         void validate(string language);
+        inline static const string valid_languages[10] = {
+            "Ingles", "Chines Mandarim", "Hindi", "Espanhol", 
+            "Frances", "Arabe", "Bengali", "Russo", "Portugues",
+            "Indonesio"
+        };
     public:
         Language(string language);
         string getLanguage();
-        void setLanguage();
+        void setLanguage(string language);
 };
 
 inline string Language::getLanguage() {
