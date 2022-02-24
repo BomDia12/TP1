@@ -13,6 +13,8 @@ all:
 						  ./Dominios/duration.o				   	\
 						  ./Testes/Dominios/description_test.o 	\
 						  ./Dominios/description.o			   	\
+						  ./Testes/Dominios/date_test.o			\
+						  ./Dominios/date.o						\
 						   main.cpp -o main.exe
 
 clean:
