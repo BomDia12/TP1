@@ -16,4 +16,8 @@ int main() {
     LanguageTest language = LanguageTest();
     if (language.run())
         return 1;
+    
+    DurationTest duration = DurationTest();
+    if (duration.run())
+        return 1;
 }

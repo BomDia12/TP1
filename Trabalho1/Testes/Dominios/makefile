@@ -17,7 +17,7 @@ time_test: time_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/time.o time_test.cpp
 
 duration_test: duration_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/duration.o duration_test.cpp -o duration_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/duration.o duration_test.cpp
 
 nota_test: nota_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/nota.o nota_test.cpp

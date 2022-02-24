@@ -2,5 +2,6 @@
 #include "./Testes/Dominios/nota_test.hpp"
 #include "./Testes/Dominios/name_test.hpp"
 #include "./Testes/Dominios/language_test.hpp"
+#include "./Testes/Dominios/duration_test.hpp"
 
 int main();

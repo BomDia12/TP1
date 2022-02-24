@@ -9,6 +9,8 @@ all:
 						  ./Dominios/name.o				    \
 						  ./Testes/Dominios/language_test.o \
 						  ./Dominios/language.o				\
+						  ./Testes/Dominios/duration_test.o \
+						  ./Dominios/duration.o				\
 						   main.cpp -o main.exe
 
 clean:
