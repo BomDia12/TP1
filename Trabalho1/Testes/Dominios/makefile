@@ -29,7 +29,7 @@ description_test: description_test.cpp
 #	g++ -std=c++17 -Wall ../../Dominios/address.o address_test.cpp -o address_test.exe
 
 language_test: language_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/language.o language_test.cpp -o language_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/language.o language_test.cpp
 
 clean:
 	rm -rf *.o *.exe

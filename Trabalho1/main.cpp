@@ -12,4 +12,8 @@ int main() {
     NameTest name = NameTest();
     if (name.run())
         return 1;
+    
+    LanguageTest language = LanguageTest();
+    if (language.run())
+        return 1;
 }
