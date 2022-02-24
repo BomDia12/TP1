@@ -13,6 +13,7 @@ class Language {
             "Indonesio"
         };
     public:
+        Language();
         Language(string language);
         string getLanguage();
         void setLanguage(string language);

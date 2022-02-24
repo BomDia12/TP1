@@ -22,6 +22,7 @@ class Date {
             "Jan", "Mar", "Mai", "Jul", "Ago", "Out", "Dez"
         };
     public:
+        Date();
 
         /**
          * Inicializa uma data caso os parametros sejam válidos. Considera anos bissextos

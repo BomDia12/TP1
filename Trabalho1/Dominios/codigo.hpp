@@ -1,3 +1,5 @@
+#ifndef CODIGO
+#define CODIGO
 #include <string>
 using namespace std;
 
@@ -6,6 +8,7 @@ class Codigo {
         string codigo;
         void validate(string codigo);
     public:
+        Codigo();
         Codigo(string codigo);
         string getCodigo();
         void setCodigo(string codigo);
@@ -14,3 +17,5 @@ class Codigo {
 inline string Codigo::getCodigo() {
     return codigo;
 }
+
+#endif
