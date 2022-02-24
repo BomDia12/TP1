@@ -25,8 +25,16 @@ int main() {
     if (codigo.run() == 1)
         return 1;
     
+    AddressTest address = AddressTest();
+    if (address.run() == 1)
+        return 1;
+    
     LanguageTest language = LanguageTest();
     if (language.run() == 1)
+        return 1;
+
+    PasswordTest password = PasswordTest();
+    if (password.run() == 1)
         return 1;
     
     DurationTest duration = DurationTest();
@@ -36,6 +44,6 @@ int main() {
     DescriptionTest description = DescriptionTest();
     if (description.run() == 1)
         return 1;
-    
+
     return 0;
 }

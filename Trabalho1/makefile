@@ -4,7 +4,11 @@ all: # domain_tests.exe entity_tests.exe
 	+$(MAKE) -C Testes
 
 domain_tests.exe: domain_tests.cpp domain_tests.hpp
-	g++ -std=c++17 -Wall  ./Testes/Dominios/time_test.o        	\
+	g++ -std=c++17 -Wall  ./Testes/Dominios/address_test.o	   	\
+						  ./Dominios/address.o				   	\
+						  ./Testes/Dominios/password_test.o	   	\
+						  ./Dominios/password.o				   	\
+						  ./Testes/Dominios/time_test.o        	\
 	 					  ./Dominios/time.o			           	\
 						  ./Testes/Dominios/nota_test.o        	\
 						  ./Dominios/nota.o				       	\

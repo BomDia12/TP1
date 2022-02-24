@@ -1,18 +1,18 @@
 #include <string>
 #include <iostream>
-#include "description.hpp"
+#include "address.hpp"
 using namespace std;
 
-Description::Description(string value) {
+Address::Address(string value) {
     validate(value);
     this->value = value;
 }
 
-void Description::validate(string value) {
+void Address::validate(string value) {
     int size = value.size();
 
-    if (size < 0 || size > 30)
-        throw invalid_argument("Descrição não está entre 0 e 30 caracteres.");
+    if (size < 0 || size > 20)
+        throw invalid_argument("Endereço não está entre 0 e 20 caracteres.");
 
     for (int i = 0; i < size; i++) {
 
@@ -23,8 +23,4 @@ void Description::validate(string value) {
             throw invalid_argument("Pontos não podem estar em sequência.");
 
     }
-}
-
-Description::Description() {
-    value = "Descricao Padrao";
 }
