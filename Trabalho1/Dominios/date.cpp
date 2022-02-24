@@ -56,7 +56,7 @@ Date::Date(string date) {
 
 void Date::setDate(string date) {
     day = getDay(date);
-    month = date.substr(2, 3);
+    month = date.substr(3, 3);
     year = getYear(date);
 
     validate(day, month, year);
