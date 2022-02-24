@@ -14,7 +14,7 @@ date_test: date_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/date.o date_test.cpp -o date_test.exe
 
 time_test: time_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/time.o time_test.cpp -o time_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/time.o time_test.cpp
 
 duration_test: duration_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/duration.o duration_test.cpp -o duration_test.exe
