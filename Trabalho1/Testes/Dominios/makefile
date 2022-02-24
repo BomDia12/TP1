@@ -23,7 +23,7 @@ nota_test: nota_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/nota.o nota_test.cpp
 
 description_test: description_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/description.o description_test.cpp -o description_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/description.o description_test.cpp
 
 #address_test: address_test.cpp
 #	g++ -std=c++17 -Wall ../../Dominios/address.o address_test.cpp -o address_test.exe

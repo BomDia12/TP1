@@ -20,4 +20,8 @@ int main() {
     DurationTest duration = DurationTest();
     if (duration.run())
         return 1;
+    
+    DescriptionTest description = DescriptionTest();
+    if (description.run())
+        return 1;
 }

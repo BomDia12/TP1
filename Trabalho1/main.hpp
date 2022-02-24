@@ -3,5 +3,6 @@
 #include "./Testes/Dominios/name_test.hpp"
 #include "./Testes/Dominios/language_test.hpp"
 #include "./Testes/Dominios/duration_test.hpp"
+#include "./Testes/Dominios/description_test.hpp"
 
 int main();
