@@ -16,9 +16,9 @@ void TimeTest::sucessful_test_block(string time) {
     cout << "Testando valor válido" << endl;
     try {
         cout << "Horario testado: " << time << endl << endl;
-        Time obj = Time(time);
+        this->time->setTime(time);
         cout << "Valor aceito!" << endl;
-        cout << "O valor atual é: " << obj.getTime() << endl;
+        cout << "O valor atual é: " << this->time->getTime() << endl;
     } catch(invalid_argument& message) {
         cout << "Valor rejeitado!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
@@ -31,9 +31,9 @@ void TimeTest::failure_test_block(string time) {
     cout << "Testando valor inválido" << endl;
     try {
         cout << "Horario testado: " << time << endl << endl;
-        Time obj = Time(time);
+        this->time->setTime(time);
         cout << "Valor aceito!" << endl;
-        cout << "O valor atual é: " << obj.getTime() << endl;
+        cout << "O valor atual é: " << this->time->getTime() << endl;
         estado = failure;
     } catch(invalid_argument& message) {
         cout << "Valor rejeitado!" << endl;

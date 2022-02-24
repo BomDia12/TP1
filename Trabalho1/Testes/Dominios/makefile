@@ -14,13 +14,15 @@ date_test: date_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/date.o date_test.cpp -o date_test.exe
 
 time_test: time_test.cpp
-	g++ -std=c++17 -Wall -c ../../Dominios/time.o time_test.cpp
+	g++ -std=c++17 -Wall -c ../../Dominios/time.o \
+							time_test.cpp
 
 duration_test: duration_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/duration.o duration_test.cpp -o duration_test.exe
 
 nota_test: nota_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/nota.o nota_test.cpp -o nota_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/nota.o \
+							nota_test.cpp
 
 description_test: description_test.cpp
 	g++ -std=c++17 -Wall ../../Dominios/description.o description_test.cpp -o description_test.exe
