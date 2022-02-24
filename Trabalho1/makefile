@@ -7,14 +7,16 @@ all:
 						  ./Dominios/nota.o				       	\
 						  ./Testes/Dominios/name_test.o        	\
 						  ./Dominios/name.o				       	\
+						  ./Testes/Dominios/date_test.o			\
+						  ./Dominios/date.o						\
+						  ./Testes/Dominios/codigo_test.o		\
+						  ./Dominios/codigo.o					\
 						  ./Testes/Dominios/language_test.o    	\
 						  ./Dominios/language.o				   	\
 						  ./Testes/Dominios/duration_test.o   	\
 						  ./Dominios/duration.o				   	\
 						  ./Testes/Dominios/description_test.o 	\
 						  ./Dominios/description.o			   	\
-						  ./Testes/Dominios/date_test.o			\
-						  ./Dominios/date.o						\
 						   main.cpp -o main.exe
 
 clean:

@@ -2,7 +2,7 @@ all: name_test codigo_test city_test date_test time_test duration_test nota_test
 
 
 codigo_test: codigo_test.cpp
-	g++ -std=c++17 -Wall ../../Dominios/codigo.o codigo_test.cpp -o codigo_test.exe
+	g++ -std=c++17 -Wall -c ../../Dominios/codigo.o codigo_test.cpp
 
 name_test: name_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/name.o name_test.cpp
