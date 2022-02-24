@@ -10,6 +10,7 @@ class Duration {
         };
 
     public:
+        Duration();
         Duration(int value);
         int getDuration();
         void setDuration(int value);

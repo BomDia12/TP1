@@ -6,6 +6,7 @@ class Codigo {
         string codigo;
         void validate(string codigo);
     public:
+        Codigo();
         Codigo(string codigo);
         string getCodigo();
         void setCodigo(string codigo);

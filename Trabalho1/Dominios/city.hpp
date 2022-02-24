@@ -11,6 +11,7 @@ class City {
             "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"
         };
     public:
+        City();
         City(string name);
         string getName();
         void setName(string name);

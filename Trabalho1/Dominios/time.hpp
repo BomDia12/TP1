@@ -8,6 +8,7 @@ class Time {
         string time;
         void validate(string time);
     public:
+        Time();
         Time(string time);
         string getTime();
         void setTime(string time);

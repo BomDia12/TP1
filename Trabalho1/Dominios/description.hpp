@@ -7,6 +7,7 @@ class Description {
         void validate(string value);
 
     public:
+        Description();
         Description(string value);
         string getDescription();
         void setDescription(string value);

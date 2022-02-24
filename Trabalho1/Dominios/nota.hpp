@@ -9,6 +9,8 @@ class Nota {
         inline static const int limite = 5;
         void validate(unsigned int nota);
     public:
+        Nota();
+
         /**
          * Constroi um novo objeto nota, caso o valor inserido seja válido
          * 
