@@ -9,7 +9,7 @@ int PasswordTest::run() {
     failure_test_block("Peedro");
     tear_down();
 
-    return 0;
+    return estado;
 }
 
 void PasswordTest::set_up() {

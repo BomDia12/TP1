@@ -9,7 +9,7 @@ int AddressTest::run() {
     failure_test_block("Serra de Arga  ");
     tear_down();
 
-    return 0;
+    return estado;
 }
 
 void AddressTest::set_up() {

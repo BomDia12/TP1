@@ -25,13 +25,13 @@ description_test: description_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/description.o description_test.cpp
 
 address_test: address_test.cpp
-	g++ -std=c++17 -Wall -c ../../Dominios/address.o address_test.cpp
+	g++ -std=c++17 -Wall  -c ../../Dominios/address.o address_test.cpp
 
 language_test: language_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/language.o language_test.cpp
 
 password_test: password_test.cpp
-	g++ -std=c++17 -Wall -c ../../Dominios/password.o password_test.cpp
+	g++ -std=c++17 -Wall  - ../../Dominios/password.o password_test.cpp
 
 clean:
 	rm -rf *.o *.exe

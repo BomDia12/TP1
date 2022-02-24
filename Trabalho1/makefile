@@ -1,7 +1,11 @@
 all:
 	+$(MAKE) -C Dominios
 	+$(MAKE) -C Testes
-	g++ -std=c++17 -Wall  ./Testes/Dominios/time_test.o        	\
+	g++ -std=c++17 -Wall  ./Teste/Dominios/address_test.o	   	\
+						  ./Dominios/address.o				   	\
+						  ./Teste/Dominios/password_test.o	   	\
+						  ./Dominios/password.o				   	\
+						  ./Testes/Dominios/time_test.o        	\
 	 					  ./Dominios/time.o			           	\
 						  ./Testes/Dominios/nota_test.o        	\
 						  ./Dominios/nota.o				       	\
@@ -19,10 +23,6 @@ all:
 						  ./Dominios/duration.o				   	\
 						  ./Testes/Dominios/description_test.o 	\
 						  ./Dominios/description.o			   	\
-						  ./Teste/Dominios/address_test.o	   	\
-						  ./Dominios/address.o					\
-						  ./Teste/Dominios/password_test.o	   	\
-						  ./Dominios/password.o					\
 						   main.cpp -o main.exe
 
 clean:
