@@ -18,7 +18,7 @@ void Time::setTime (string time) {
 void Time::validate (string time) {
 
     if ((time.length() != 5) || (time[2] != ':'))
-        throw invalid_argument("Horário deve ser no formato HH:HH");
+        throw invalid_argument("Horário deve ser no formato HH:MM");
     
     else { 
         int hour = stoi(time.substr(0, 2));
