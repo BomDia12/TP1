@@ -1,9 +1,9 @@
 all:
 	+$(MAKE) -C Dominios
 	+$(MAKE) -C Testes
-	g++ -std=c++17 -Wall  ./Teste/Dominios/address_test.o	   	\
+	g++ -std=c++17 -Wall  ./Testes/Dominios/address_test.o	   	\
 						  ./Dominios/address.o				   	\
-						  ./Teste/Dominios/password_test.o	   	\
+						  ./Testes/Dominios/password_test.o	   	\
 						  ./Dominios/password.o				   	\
 						  ./Testes/Dominios/time_test.o        	\
 	 					  ./Dominios/time.o			           	\
