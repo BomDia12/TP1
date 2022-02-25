@@ -35,12 +35,16 @@ entity_tests.exe: entity_tests.cpp entity_tests.hpp
 						 ./Dominios/time.o					\
 						 ./Dominios/title.o					\
 						 ./Dominios/codigo.o				\
-						 ./Entidades/review.o				\
 						 ./Dominios/address.o				\
 						 ./Dominios/duration.o				\
-						 ./Entidades/excurcao.o				\
+						 ./Dominios/date.o					\
 						 ./Dominios/description.o			\
+						 ./Dominios/language.o				\
+						 ./Entidades/excurcao.o				\
+						 ./Entidades/review.o				\
+						 ./Entidades/session.o				\
 						 ./Testes/Entidades/excurcao_test.o \
+						 ./Testes/Entidades/session_test.o  \
 						 entity_tests.cpp -o entity_tests.exe
 
 clean:

@@ -1,4 +1,4 @@
-all: review.o excurcao.o
+all: review.o excurcao.o session.o
 
 review.o: review.cpp review.hpp
 	g++ -std=c++17 -Wall -c ../Dominios/nota.o        \
@@ -14,6 +14,12 @@ excurcao.o: excurcao.cpp excurcao.hpp
 							../Dominios/codigo.o		\
 							../Dominios/address.o		\
 							../Dominios/duration.o		\
-							../Dominios/duration.o		\
 							../Dominios/description.o	\
 							excurcao.cpp
+
+session.o: session.cpp session.hpp
+	g++ -std=c++17 -Wall -c ../Dominios/time.o			\
+							../Dominios/date.o			\
+							../Dominios/language.o		\
+							../Dominios/codigo.o		\
+							session.cpp
