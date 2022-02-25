@@ -48,4 +48,5 @@ inline void Name::setName(std::string n) {
     value = n;
 }
 
+inline Name::Name() {}
 #endif

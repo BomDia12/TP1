@@ -1,4 +1,4 @@
-all: review.o excurcao.o session.o
+all: review.o excurcao.o session.o user.o
 
 review.o: review.cpp review.hpp
 	g++ -std=c++17 -Wall -c ../Dominios/nota.o        \
@@ -23,3 +23,7 @@ session.o: session.cpp session.hpp
 							../Dominios/language.o		\
 							../Dominios/codigo.o		\
 							session.cpp
+
+
+user.o: user.cpp user.hpp
+	g++ -std=c++17 -Wall -c user.cpp

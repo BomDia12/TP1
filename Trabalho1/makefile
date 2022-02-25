@@ -34,6 +34,8 @@ all: # domain_tests.exe entity_tests.exe
 						  ./Testes/Entidades/review_test.o		\
 						  ./Testes/Entidades/excurcao_test.o	\
 						  ./Testes/Entidades/session_test.o		\
+						  ./Testes/Entidades/user_test.o		\
+						  ./Entidades/user.o					\
 						  main.cpp -o main.exe
 
 clean:
