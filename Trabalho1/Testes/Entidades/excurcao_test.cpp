@@ -71,7 +71,7 @@ void ExcurcaoTest::failure_time_test(string value) {
 void ExcurcaoTest::sucess_city_test(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Cidade testada: " << value << endl << endl;
         obj->setCity(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getCity() << endl;
@@ -86,7 +86,7 @@ void ExcurcaoTest::sucess_city_test(string value) {
 void ExcurcaoTest::failure_city_test(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Cidade testado: " << value << endl << endl;
         obj->setCity(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getCity() << endl;
@@ -102,7 +102,7 @@ void ExcurcaoTest::failure_city_test(string value) {
 void ExcurcaoTest::sucess_title_test(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Titulo testado: " << value << endl << endl;
         obj->setTitle(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getTitle() << endl;
@@ -117,7 +117,7 @@ void ExcurcaoTest::sucess_title_test(string value) {
 void ExcurcaoTest::failure_title_test(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Titulo testado: " << value << endl << endl;
         obj->setTitle(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getTitle() << endl;
@@ -132,7 +132,7 @@ void ExcurcaoTest::failure_title_test(string value) {
 void ExcurcaoTest::sucess_codigo_test(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Codigo testado: " << value << endl << endl;
         obj->setCodigo(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getCodigo() << endl;
@@ -147,7 +147,7 @@ void ExcurcaoTest::sucess_codigo_test(string value) {
 void ExcurcaoTest::failure_codigo_test(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Codigo testado: " << value << endl << endl;
         obj->setCodigo(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getCodigo() << endl;
@@ -162,7 +162,7 @@ void ExcurcaoTest::failure_codigo_test(string value) {
 void ExcurcaoTest::sucess_address_test(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Endereço testado: " << value << endl << endl;
         obj->setAddress(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getAddress() << endl;
@@ -177,7 +177,7 @@ void ExcurcaoTest::sucess_address_test(string value) {
 void ExcurcaoTest::failure_address_test(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Endereço testado: " << value << endl << endl;
         obj->setAddress(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getAddress() << endl;
@@ -192,7 +192,7 @@ void ExcurcaoTest::failure_address_test(string value) {
 void ExcurcaoTest::sucess_description_test(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Descrição testada: " << value << endl << endl;
         obj->setDescription(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getDescription() << endl;
@@ -207,7 +207,7 @@ void ExcurcaoTest::sucess_description_test(string value) {
 void ExcurcaoTest::failure_description_test(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Descrição testada: " << value << endl << endl;
         obj->setDescription(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getDescription() << endl;
@@ -222,7 +222,7 @@ void ExcurcaoTest::failure_description_test(string value) {
 void ExcurcaoTest::sucess_nota_test(unsigned int value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Nota testada: " << value << endl << endl;
         obj->setNota(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getNota() << endl;
@@ -237,7 +237,7 @@ void ExcurcaoTest::sucess_nota_test(unsigned int value) {
 void ExcurcaoTest::failure_nota_test(unsigned int value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Nota testada: " << value << endl << endl;
         obj->setNota(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getNota() << endl;
@@ -252,7 +252,7 @@ void ExcurcaoTest::failure_nota_test(unsigned int value) {
 void ExcurcaoTest::sucess_duration_test(unsigned int value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Duração testada: " << value << endl << endl;
         obj->setDuration(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getDuration() << endl;
@@ -267,7 +267,7 @@ void ExcurcaoTest::sucess_duration_test(unsigned int value) {
 void ExcurcaoTest::failure_duration_test(unsigned int value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Duração testada: " << value << endl << endl;
         obj->setDuration(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << obj->getDuration() << endl;
