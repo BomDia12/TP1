@@ -4,6 +4,14 @@
 #include "../Dominios/email.hpp"
 #include "../Dominios/password.hpp"
 
+/**
+ * 
+ * @brief Classe User
+ * @author Gabriel Cruz - 200049038
+ * 
+ * Entidade User, que guarda o User
+ */
+
 class User {
     private:
         Name name;
@@ -37,6 +45,27 @@ class User {
          * @throw invalid_argument caso o valor seja inválido
          */
         void set_email(string);
+
+        /**
+         * @brief retorna o email do usuário
+         * 
+         * @return string com o email do usuário
+         */ 
+        string get_email();
+
+        /**
+         * @brief atualiza o valor da senha
+         * @param password a nova senha do usuário
+         * @throw invalid_argument caso o valor seja inválido
+         */ 
+        void set_password(string);
+
+        /**
+         * @brief retorna a senha do usuário
+         * 
+         * @return string com a senha do usuário
+         */ 
+        string get_password();
 };
 
 #endif
