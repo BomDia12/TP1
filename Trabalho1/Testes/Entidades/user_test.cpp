@@ -9,7 +9,7 @@ int UserTest::run() {
     sucessful_email_test_block("batata@batata");
 
     failure_name_test_block("Bom  dia");
-    sucessful_name_test_block("Bom dia");
+    sucessful_name_test_block("Bom Dia");
 
     failure_password_test_block("12345");
     sucessful_password_test_block("AbaB12");
@@ -74,7 +74,7 @@ void UserTest::sucessful_name_test_block(string name) {
 }
 
 void UserTest::failure_name_test_block(string name) {
-    cout << "Testando Nome válido" << endl;
+    cout << "Testando Nome Inválido" << endl;
     try {
         cout << "Nome Testado: " << name << endl << endl;
         user->setName(name);
