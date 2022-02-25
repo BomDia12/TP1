@@ -2,6 +2,11 @@
 #include "../../Dominios/password.hpp"
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio password
+ *
+ * @author Pedro Venzi - 200042696
+ */
 class PasswordTest {
     private:
         inline static const int success = 0;

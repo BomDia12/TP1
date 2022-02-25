@@ -2,6 +2,11 @@
 #include <string>
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio name
+ *
+ * @author Arthur Mota Furtado - 200014935
+ */
 class NameTest {
     private:
         inline static const int sucess = 0;

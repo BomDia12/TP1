@@ -2,6 +2,11 @@
 #include "../../Dominios/city.hpp"
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio city
+ *
+ * @author Arthur Mota Furtado - 200014935
+ */
 class CityTest {
     private:
         inline static const int sucess = 0;

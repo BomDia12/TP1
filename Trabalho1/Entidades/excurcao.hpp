@@ -9,6 +9,13 @@
 #include "../Dominios/duration.hpp"
 #include "../Dominios/description.hpp"
 
+/**
+ * @brief Classe excurção
+ * 
+ * @author Arthur Mota Furtado - 200014935
+ *
+ * Classe para a entidade Excurção, com todos os campos exigidos.
+ */
 class Excurcao {
     private:
         Time time;

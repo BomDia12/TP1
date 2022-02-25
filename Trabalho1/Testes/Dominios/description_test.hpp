@@ -2,6 +2,11 @@
 #include "../../Dominios/description.hpp"
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio description
+ *
+ * @author Arthur Mota Furtado - 200014935
+ */
 class DescriptionTest {
     private:
         inline static const int sucess = 0;

@@ -1,6 +1,11 @@
 #include <string>
 #include "../../Dominios/codigo.hpp"
 
+/**
+ * @brief Classe que testa o domínio código
+ *
+ * @author Arthur Mota Furtado - 200014935
+ */
 class CodigoTest {
     private:
         inline static const int sucess = 0;

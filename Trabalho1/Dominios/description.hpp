@@ -3,6 +3,9 @@
 #include <string>
 using namespace std;
 
+/**
+ * @author Pedro Venzi -  200042696
+ */
 class Description {
     private:
         string value;

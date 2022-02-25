@@ -3,6 +3,9 @@
 #include <string>
 using namespace std;
 
+/**
+ * @author Arthur Mota Furtado - 200014935
+ */
 class Codigo {
     private:
         string codigo;

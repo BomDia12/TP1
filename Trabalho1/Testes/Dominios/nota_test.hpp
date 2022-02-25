@@ -1,5 +1,10 @@
 #include "../../Dominios/nota.hpp"
 
+/**
+ * @brief Classe que testa o domínio nota
+ *
+ * @author Arthur Mota Furtado - 200014935
+ */
 class NotaTest {
     private:
         inline static const int sucess = 0;

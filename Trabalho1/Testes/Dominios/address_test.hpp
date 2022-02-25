@@ -2,6 +2,11 @@
 #include "../../Dominios/address.hpp"
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio Address
+ *
+ * @author Pedro Venzi - 200042696
+ */
 class AddressTest {
     private:
         inline static const int success = 0;
