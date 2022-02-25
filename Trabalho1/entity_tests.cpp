@@ -9,5 +9,9 @@ int main() {
     if (excurcao.run() == 1)
         return 1;
 
+    SessionTest session = SessionTest();
+    if (session.run() == 1)
+        return 1;
+
     return 0;
 }
