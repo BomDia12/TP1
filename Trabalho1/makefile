@@ -30,10 +30,17 @@ domain_tests.exe: domain_tests.cpp domain_tests.hpp
 
 entity_tests.exe: entity_tests.cpp entity_tests.hpp
 	g++ -std=c++17 -Wall ./Testes/Entidades/review_test.o	\
-						 ./Entidades/review.o				\
 						 ./Dominios/nota.o					\
+						 ./Dominios/city.o					\
+						 ./Dominios/time.o					\
+						 ./Dominios/title.o					\
 						 ./Dominios/codigo.o				\
+						 ./Entidades/review.o				\
+						 ./Dominios/address.o				\
+						 ./Dominios/duration.o				\
+						 ./Entidades/excurcao.o				\
 						 ./Dominios/description.o			\
+						 ./Testes/Entidades/excurcao_test.o \
 						 entity_tests.cpp -o entity_tests.exe
 
 clean:
