@@ -1,5 +1,4 @@
-all: name.o codigo.o city.o date.o time.o nota.o duration.o description.o language.o
-
+all: name.o codigo.o city.o date.o time.o nota.o duration.o description.o address.o language.o password.o title.o
 
 codigo.o: codigo.cpp codigo.hpp
 	g++ -std=c++17 -Wall -c codigo.cpp
@@ -22,11 +21,20 @@ duration.o: duration.cpp duration.hpp
 description.o: description.cpp description.hpp
 	g++ -std=c++17 -Wall -c description.cpp
 
+address.o: address.cpp address.hpp
+	g++ -std=c++17 -Wall -c address.cpp
+
+password.o: password.cpp password.hpp
+	g++ -std=c++17 -Wall -c password.cpp
+
 language.o: language.cpp language.hpp
 	g++ -std=c++17 -Wall -c language.cpp
 
 nota.o: nota.cpp nota.hpp
 	g++ -std=c++17 -Wall -c nota.cpp
+
+title.o: title.cpp title.hpp
+	g++ -std=c++17 -Wall -c title.cpp
 
 clean:
 	rm -rf *.o *.exe

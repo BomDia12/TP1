@@ -9,6 +9,8 @@ class Name {
         std::string value;
         void validate(std::string n);
     public:
+        Name();
+
         /**
          * Cria um novo nome caso o valor seja válido
          * 

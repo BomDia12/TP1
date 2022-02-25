@@ -1,3 +1,5 @@
+#ifndef NOTA
+#define NOTA
 /**
  * Classe que implementa a nota e checa se o valor é válido
  * 
@@ -9,6 +11,8 @@ class Nota {
         inline static const int limite = 5;
         void validate(unsigned int nota);
     public:
+        Nota();
+
         /**
          * Constroi um novo objeto nota, caso o valor inserido seja válido
          * 
@@ -38,3 +42,5 @@ class Nota {
 inline unsigned int Nota::getNota() {
     return nota;
 }
+
+#endif

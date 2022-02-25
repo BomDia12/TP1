@@ -1,8 +1,10 @@
 #include <string>
 #include <iostream>
-
 using namespace std;
 
+/**
+ * @author Gabriel Cruz - 200049038
+ */
 class Language {
     private:
         string language;
@@ -13,6 +15,7 @@ class Language {
             "Indonesio"
         };
     public:
+        Language();
         Language(string language);
         string getLanguage();
         void setLanguage(string language);
@@ -21,3 +24,5 @@ class Language {
 inline string Language::getLanguage() {
     return language;
 }
+
+inline Language::Language() {};

@@ -1,33 +1,33 @@
 #include <string>
 #include <iostream>
-#include "address_test.hpp"
+#include "password_test.hpp"
 using namespace std;
 
-int AddressTest::run() {
+int PasswordTest::run() {
     set_up();
-    successful_test_block("Serra de Arga");
-    failure_test_block("Serra de Arga  ");
+    successful_test_block("Pedro1");
+    failure_test_block("Peedro");
     tear_down();
 
     return estado;
 }
 
-void AddressTest::set_up() {
-    address = new Address("Serra de Arga");
+void PasswordTest::set_up() {
+    password = new Password("Pedro1");
     estado = success;
 }
 
-void AddressTest::tear_down() {
-    delete address;
+void PasswordTest::tear_down() {
+    delete password;
 }
 
-void AddressTest::successful_test_block(string address) {
+void PasswordTest::successful_test_block(string password) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << address << endl << endl;
-        this->address->setAddress(address);
+        cout << "Horario testado: " << password << endl << endl;
+        this->password->setPassword(password);
         cout << "Valor aceito!" << endl;
-        cout << "O valor atual é: " << this->address->getAddress() << endl;
+        cout << "O valor atual é: " << this->password->getPassword() << endl;
     } catch(invalid_argument& message) {
         cout << "Valor rejeitado!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
@@ -36,13 +36,13 @@ void AddressTest::successful_test_block(string address) {
     cout << "\n==============================\n\n";
 }
 
-void AddressTest::failure_test_block(string address) {
+void PasswordTest::failure_test_block(string password) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << address << endl << endl;
-        this->address->setAddress(address);
+        cout << "Horario testado: " << password << endl << endl;
+        this->password->setPassword(password);
         cout << "Valor aceito!" << endl;
-        cout << "O valor atual é: " << this->address->getAddress() << endl;
+        cout << "O valor atual é: " << this->password->getPassword() << endl;
         estado = failure;
     } catch(invalid_argument& message) {
         cout << "Valor rejeitado!" << endl;
