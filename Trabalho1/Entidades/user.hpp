@@ -24,6 +24,30 @@ class User {
         User();
 
         /**
+         * @brief construtor que recebe apenas o email
+         * @param email configura o email do usuario, caso seja válido
+         * @throw invalid argument quando o email inserido for invalido
+         */ 
+        User(Email);
+
+        /**
+         * @brief construtor que recebe o email e a senha
+         * @param email configura o email do usuário, caso seja válido
+         * @param name configura o nome do usuário, caso seja válido
+         * @throw invalid_argument quando algum valor for invalido
+         */
+        User(Email, Name);
+
+                /**
+         * @brief construtor que recebe o email e a senha
+         * @param email configura o email do usuário, caso seja válido
+         * @param name configura o nome do usuário, caso seja válido
+         * @param password configura a senha do usuário, caso seja válido
+         * @throw invalid_argument quando algum valor for invalido
+         */
+        User(Email, Name, Password);
+
+        /**
          * @brief atualiza o valor do nome do usuário
          * 
          * @param name o novo nome a ser atualizado
