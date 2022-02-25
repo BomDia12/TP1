@@ -1,3 +1,5 @@
+#ifndef TITLE
+#define TITLE
 #include <string>
 #include <iostream>
 using namespace std;
@@ -47,3 +49,5 @@ inline string Title::getTitle() {
 }
 
 inline Title::Title(){};
+
+#endif

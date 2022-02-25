@@ -1,3 +1,5 @@
+#ifndef LANGUAGE
+#define LANGUAGE
 #include <string>
 #include <iostream>
 using namespace std;
@@ -52,3 +54,5 @@ inline string Language::getLanguage() {
 }
 
 inline Language::Language() {};
+
+#endif

@@ -1,3 +1,5 @@
+#ifndef DATE
+#define DATE
 #include <string>
 using namespace std;
 
@@ -75,3 +77,5 @@ class Date {
 };
 
 inline Date::Date() {};
+
+#endif

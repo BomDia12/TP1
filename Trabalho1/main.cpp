@@ -1,4 +1,4 @@
-#include "domain_tests.hpp"
+#include "main.hpp"
 
 int main() {
     TimeTest time = TimeTest();
@@ -52,6 +52,20 @@ int main() {
     DescriptionTest description = DescriptionTest();
     if (description.run() == 1)
         return 1;
+    
+    ReviewTest review = ReviewTest();
+    if (review.run() == 1)
+        return 1;
+    
+    ExcurcaoTest excurcao = ExcurcaoTest();
+    if (excurcao.run() == 1)
+        return 1;
+
+    SessionTest session = SessionTest();
+    if (session.run() == 1)
+        return 1;
+
 
     return 0;
 }
+

@@ -1,3 +1,5 @@
+#ifndef EMAIL
+#define EMAIL
 #include <string>
 #include <iostream>
 
@@ -49,3 +51,5 @@ inline string Email::getEmail() {
 }
 
 inline Email::Email(){};
+
+#endif

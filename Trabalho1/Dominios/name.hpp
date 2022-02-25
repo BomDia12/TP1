@@ -1,3 +1,5 @@
+#ifndef NAME
+#define NAME
 #include <string>
 /**
  * Classe que implemeta o nome e confere se o valor é válido
@@ -45,3 +47,5 @@ inline void Name::setName(std::string n) {
     validate(n);
     value = n;
 }
+
+#endif

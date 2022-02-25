@@ -1,3 +1,5 @@
+#ifndef DURATION
+#define DURATION
 #include <string>
 using namespace std;
 
@@ -55,3 +57,5 @@ inline void Duration::setDuration(int value) {
 };
 
 inline Duration::Duration() {};
+
+#endif

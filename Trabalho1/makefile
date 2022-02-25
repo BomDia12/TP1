@@ -2,9 +2,7 @@ all: # domain_tests.exe entity_tests.exe
 	+$(MAKE) -C Dominios
 	+$(MAKE) -C Entidades
 	+$(MAKE) -C Testes
-
-domain_tests.exe: domain_tests.cpp domain_tests.hpp
-	g++ -std=c++17 -Wall  ./Testes/Dominios/address_test.o	   	\
+	g++ -std=c++17 -Wall ./Testes/Dominios/address_test.o	   	\
 						  ./Dominios/address.o				   	\
 						  ./Testes/Dominios/password_test.o	   	\
 						  ./Dominios/password.o				   	\
@@ -30,26 +28,13 @@ domain_tests.exe: domain_tests.cpp domain_tests.hpp
 						  ./Dominios/title.o					\
 						  ./Testes/Dominios/email_test.o		\
 						  ./Dominios/email.o					\
-						   domain_tests.cpp -o domain_tests.exe
-
-entity_tests.exe: entity_tests.cpp entity_tests.hpp
-	g++ -std=c++17 -Wall ./Testes/Entidades/review_test.o	\
-						 ./Testes/Entidades/excurcao_test.o \
-						 ./Testes/Entidades/session_test.o  \
-						 ./Dominios/nota.o					\
-						 ./Dominios/city.o					\
-						 ./Dominios/time.o					\
-						 ./Dominios/title.o					\
-						 ./Dominios/codigo.o				\
-						 ./Dominios/address.o				\
-						 ./Dominios/duration.o				\
-						 ./Dominios/date.o					\
-						 ./Dominios/description.o			\
-						 ./Dominios/language.o				\
-						 ./Entidades/excurcao.o				\
-						 ./Entidades/review.o				\
-						 ./Entidades/session.o				\
-						 entity_tests.cpp -o entity_tests.exe
+						  ./Entidades/excurcao.o				\
+						  ./Entidades/review.o					\
+						  ./Entidades/session.o					\
+						  ./Testes/Entidades/review_test.o		\
+						  ./Testes/Entidades/excurcao_test.o	\
+						  ./Testes/Entidades/session_test.o		\
+						  main.cpp -o main.exe
 
 clean:
 	rm -rf ./*/*.o ./*/*/*.exe ./*/*/*.o

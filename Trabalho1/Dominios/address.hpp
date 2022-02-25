@@ -1,3 +1,5 @@
+#ifndef ADDRESS
+#define ADDRESS
 #include <string>
 using namespace std;
 
@@ -49,3 +51,5 @@ inline void Address::setAddress(string value) {
     validate(value);
     this->value = value;
 };
+
+#endif

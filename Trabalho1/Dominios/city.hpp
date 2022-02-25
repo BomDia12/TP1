@@ -1,3 +1,5 @@
+#ifndef CITY
+#define CITY
 #include <string>
 using namespace std;
 
@@ -56,3 +58,5 @@ inline void City::setName(string name) {
 }
 
 inline City::City() {};
+
+#endif

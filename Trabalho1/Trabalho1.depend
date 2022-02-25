@@ -1,0 +1,294 @@
+# depslib dependency file v1.0
+1645744026 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/address.cpp
+	<string>
+	<iostream>
+	"address.hpp"
+
+1645811079 /home/bomdia/UnB/TP1/Trabalho1/Dominios/address.hpp
+	<string>
+
+1645744065 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/city.cpp
+	"city.hpp"
+	<string>
+	<ctype.h>
+	<iostream>
+
+1645811110 /home/bomdia/UnB/TP1/Trabalho1/Dominios/city.hpp
+	<string>
+
+1645743318 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/codigo.cpp
+	<string>
+	<iostream>
+	"codigo.hpp"
+
+1645798034 /home/bomdia/UnB/TP1/Trabalho1/Dominios/codigo.hpp
+	<string>
+
+1645810119 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/date.cpp
+	<string>
+	<iostream>
+	"date.hpp"
+	<regex>
+
+1645811140 /home/bomdia/UnB/TP1/Trabalho1/Dominios/date.hpp
+	<string>
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/description.cpp
+	<string>
+	<iostream>
+	"description.hpp"
+
+1645798755 /home/bomdia/UnB/TP1/Trabalho1/Dominios/description.hpp
+	<string>
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/duration.cpp
+	<string>
+	<iostream>
+	"duration.hpp"
+
+1645811186 /home/bomdia/UnB/TP1/Trabalho1/Dominios/duration.hpp
+	<string>
+
+1645810133 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/email.cpp
+	<iostream>
+	<string>
+	<regex>
+	"email.hpp"
+
+1645811240 /home/bomdia/UnB/TP1/Trabalho1/Dominios/email.hpp
+	<string>
+	<iostream>
+
+1645708890 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/language.cpp
+	<iostream>
+	<string>
+	"language.hpp"
+
+1645811283 /home/bomdia/UnB/TP1/Trabalho1/Dominios/language.hpp
+	<string>
+	<iostream>
+
+1645575580 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/name.cpp
+	"name.hpp"
+	<stdio.h>
+	<ctype.h>
+	<iostream>
+	<string>
+	<regex>
+
+1645811324 /home/bomdia/UnB/TP1/Trabalho1/Dominios/name.hpp
+	<string>
+
+1645743318 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/nota.cpp
+	"nota.hpp"
+	<iostream>
+
+1645743318 /home/bomdia/UnB/TP1/Trabalho1/Dominios/nota.hpp
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/password.cpp
+	<string>
+	<iostream>
+	"password.hpp"
+	<regex>
+
+1645811383 /home/bomdia/UnB/TP1/Trabalho1/Dominios/password.hpp
+	<string>
+
+1645708890 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/time.cpp
+	<iostream>
+	<string>
+	"time.hpp"
+
+1645810119 /home/bomdia/UnB/TP1/Trabalho1/Dominios/time.hpp
+	<string>
+	<iostream>
+
+1645748815 source:/home/bomdia/UnB/TP1/Trabalho1/Dominios/title.cpp
+	<iostream>
+	<string>
+	"title.hpp"
+
+1645811517 /home/bomdia/UnB/TP1/Trabalho1/Dominios/title.hpp
+	<string>
+	<iostream>
+
+1645747417 source:/home/bomdia/UnB/TP1/Trabalho1/Entidades/excurcao.cpp
+	"excurcao.hpp"
+
+1645810119 /home/bomdia/UnB/TP1/Trabalho1/Entidades/excurcao.hpp
+	"../Dominios/time.hpp"
+	"../Dominios/nota.hpp"
+	"../Dominios/city.hpp"
+	"../Dominios/title.hpp"
+	"../Dominios/codigo.hpp"
+	"../Dominios/address.hpp"
+	"../Dominios/duration.hpp"
+	"../Dominios/description.hpp"
+
+1645743318 source:/home/bomdia/UnB/TP1/Trabalho1/Entidades/review.cpp
+	"review.hpp"
+
+1645752793 /home/bomdia/UnB/TP1/Trabalho1/Entidades/review.hpp
+	"../Dominios/nota.hpp"
+	"../Dominios/codigo.hpp"
+	"../Dominios/description.hpp"
+
+1645810119 source:/home/bomdia/UnB/TP1/Trabalho1/Entidades/session.cpp
+	"session.hpp"
+
+1645810119 /home/bomdia/UnB/TP1/Trabalho1/Entidades/session.hpp
+	"../Dominios/date.hpp"
+	"../Dominios/time.hpp"
+	"../Dominios/codigo.hpp"
+	"../Dominios/language.hpp"
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/address_test.cpp
+	<string>
+	<iostream>
+	"address_test.hpp"
+
+1645794865 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/address_test.hpp
+	<string>
+	"../../Dominios/address.hpp"
+
+1645794438 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/city_test.cpp
+	<string>
+	<iostream>
+	"city_test.hpp"
+
+1645794643 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/city_test.hpp
+	<string>
+	"../../Dominios/city.hpp"
+
+1645721021 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/codigo_test.cpp
+	<iostream>
+	"codigo_test.hpp"
+	<string>
+
+1645794676 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/codigo_test.hpp
+	<string>
+	"../../Dominios/codigo.hpp"
+
+1645721021 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/date_test.cpp
+	"date_test.hpp"
+	<string>
+	<iostream>
+
+1645794702 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/date_test.hpp
+	"../../Dominios/date.hpp"
+	<string>
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/description_test.cpp
+	<string>
+	<iostream>
+	"description_test.hpp"
+
+1645794712 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/description_test.hpp
+	<string>
+	"../../Dominios/description.hpp"
+
+1645721021 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/duration_test.cpp
+	<string>
+	<iostream>
+	"duration_test.hpp"
+
+1645794738 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/duration_test.hpp
+	"../../Dominios/duration.hpp"
+
+1645810133 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/email_test.cpp
+	"email_test.hpp"
+
+1645810133 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/email_test.hpp
+	"../../Dominios/email.hpp"
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/language_test.cpp
+	<string>
+	<iostream>
+	"language_test.hpp"
+
+1645794755 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/language_test.hpp
+	<string>
+	"../../Dominios/language.hpp"
+
+1645721021 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/name_test.cpp
+	<iostream>
+	<string>
+	"name_test.hpp"
+
+1645794766 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/name_test.hpp
+	"../../Dominios/name.hpp"
+	<string>
+
+1645721021 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/nota_test.cpp
+	"nota_test.hpp"
+	<iostream>
+
+1645794777 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/nota_test.hpp
+	"../../Dominios/nota.hpp"
+
+1645743518 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/password_test.cpp
+	<string>
+	<iostream>
+	"password_test.hpp"
+
+1645794870 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/password_test.hpp
+	<string>
+	"../../Dominios/password.hpp"
+
+1645721021 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/time_test.cpp
+	"time_test.hpp"
+	<string>
+	<iostream>
+
+1645794795 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/time_test.hpp
+	"../../Dominios/time.hpp"
+	<string>
+
+1645797042 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/title_test.cpp
+	"title_test.hpp"
+	<iostream>
+
+1645796982 /home/bomdia/UnB/TP1/Trabalho1/Testes/Dominios/title_test.hpp
+	"../../Dominios/title.hpp"
+
+1645750720 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Entidades/excurcao_test.cpp
+	"excurcao_test.hpp"
+
+1645750742 /home/bomdia/UnB/TP1/Trabalho1/Testes/Entidades/excurcao_test.hpp
+	"../../Entidades/excurcao.hpp"
+
+1645743318 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Entidades/review_test.cpp
+	"review_test.hpp"
+	<iostream>
+
+1645743318 /home/bomdia/UnB/TP1/Trabalho1/Testes/Entidades/review_test.hpp
+	"../../Entidades/review.hpp"
+
+1645810119 source:/home/bomdia/UnB/TP1/Trabalho1/Testes/Entidades/session_test.cpp
+	"session_test.hpp"
+	<iostream>
+
+1645810119 /home/bomdia/UnB/TP1/Trabalho1/Testes/Entidades/session_test.hpp
+	"../../Entidades/session.hpp"
+
+1645810622 source:/home/bomdia/UnB/TP1/Trabalho1/main.cpp
+	"main.hpp"
+
+1645810565 /home/bomdia/UnB/TP1/Trabalho1/main.hpp
+	"./Testes/Dominios/time_test.hpp"
+	"./Testes/Dominios/nota_test.hpp"
+	"./Testes/Dominios/name_test.hpp"
+	"./Testes/Dominios/date_test.hpp"
+	"./Testes/Dominios/city_test.hpp"
+	"./Testes/Dominios/title_test.hpp"
+	"./Testes/Dominios/email_test.hpp"
+	"./Testes/Dominios/codigo_test.hpp"
+	"./Testes/Dominios/address_test.hpp"
+	"./Testes/Entidades/review_test.hpp"
+	"./Testes/Entidades/session_test.hpp"
+	"./Testes/Dominios/language_test.hpp"
+	"./Testes/Dominios/duration_test.hpp"
+	"./Testes/Dominios/password_test.hpp"
+	"./Testes/Entidades/excurcao_test.hpp"
+	"./Testes/Dominios/description_test.hpp"
+

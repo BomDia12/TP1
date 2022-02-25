@@ -7,9 +7,10 @@
 #include "./Testes/Dominios/email_test.hpp"
 #include "./Testes/Dominios/codigo_test.hpp"
 #include "./Testes/Dominios/address_test.hpp"
+#include "./Testes/Entidades/review_test.hpp"
+#include "./Testes/Entidades/session_test.hpp"
 #include "./Testes/Dominios/language_test.hpp"
 #include "./Testes/Dominios/duration_test.hpp"
 #include "./Testes/Dominios/password_test.hpp"
+#include "./Testes/Entidades/excurcao_test.hpp"
 #include "./Testes/Dominios/description_test.hpp"
-
-int main();

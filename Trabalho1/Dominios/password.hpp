@@ -1,3 +1,5 @@
+#ifndef PASSWORD
+#define PASSWORD
 #include <string>
 using namespace std;
 
@@ -52,3 +54,5 @@ inline void Password::setPassword(string value) {
     validate(value);
     this->value = value;
 };
+
+#endif
