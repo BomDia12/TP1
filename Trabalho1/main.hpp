@@ -5,6 +5,7 @@
 #include "./Testes/Dominios/city_test.hpp"
 #include "./Testes/Dominios/title_test.hpp"
 #include "./Testes/Dominios/email_test.hpp"
+#include "./Testes/Entidades/user_test.hpp"
 #include "./Testes/Dominios/codigo_test.hpp"
 #include "./Testes/Dominios/address_test.hpp"
 #include "./Testes/Entidades/review_test.hpp"

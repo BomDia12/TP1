@@ -63,7 +63,7 @@ void SessionTest::failure_time_test_block(string value) {
 void SessionTest::sucessful_code_test_block(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Codigo testado: " << value << endl << endl;
         session->setCodigo(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << session->getCodigo() << endl;
@@ -78,7 +78,7 @@ void SessionTest::sucessful_code_test_block(string value) {
 void SessionTest::failure_code_test_block(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Codigo testado: " << value << endl << endl;
         session->setCodigo(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << session->getCodigo() << endl;
@@ -93,7 +93,7 @@ void SessionTest::failure_code_test_block(string value) {
 void SessionTest::sucessful_date_test_block(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Data testada: " << value << endl << endl;
         session->setDate(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << session->getDate() << endl;
@@ -108,7 +108,7 @@ void SessionTest::sucessful_date_test_block(string value) {
 void SessionTest::failure_date_test_block(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Data testada: " << value << endl << endl;
         session->setDate(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << session->getDate() << endl;
@@ -123,7 +123,7 @@ void SessionTest::failure_date_test_block(string value) {
 void SessionTest::sucessful_language_test_block(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Idioma testado: " << value << endl << endl;
         session->setLanguage(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << session->getLanguage() << endl;
@@ -138,7 +138,7 @@ void SessionTest::sucessful_language_test_block(string value) {
 void SessionTest::failure_language_test_block(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Idioma testado: " << value << endl << endl;
         session->setLanguage(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << session->getLanguage() << endl;

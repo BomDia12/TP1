@@ -65,6 +65,9 @@ int main() {
     if (session.run() == 1)
         return 1;
 
+    UserTest user = UserTest();
+    if (user.run() == 1)
+        return 1;
 
     return 0;
 }

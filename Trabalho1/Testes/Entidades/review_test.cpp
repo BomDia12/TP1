@@ -27,7 +27,7 @@ void ReviewTest::tear_down() {
 void ReviewTest::sucessful_description_test_block(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Descrição testada: " << value << endl << endl;
         review->setDescription(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << review->getDescription() << endl;
@@ -42,7 +42,7 @@ void ReviewTest::sucessful_description_test_block(string value) {
 void ReviewTest::failure_description_test_block(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Descrição testada: " << value << endl << endl;
         review->setDescription(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << review->getDescription() << endl;
@@ -57,7 +57,7 @@ void ReviewTest::failure_description_test_block(string value) {
 void ReviewTest::sucessful_code_test_block(string value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Codigo testado: " << value << endl << endl;
         review->setCodigo(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << review->getCodigo() << endl;
@@ -72,7 +72,7 @@ void ReviewTest::sucessful_code_test_block(string value) {
 void ReviewTest::failure_code_test_block(string value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Codigo testado: " << value << endl << endl;
         review->setCodigo(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << review->getCodigo() << endl;
@@ -87,7 +87,7 @@ void ReviewTest::failure_code_test_block(string value) {
 void ReviewTest::sucessful_grade_test_block(unsigned int value) {
     cout << "Testando valor válido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Nota testada: " << value << endl << endl;
         review->setNota(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << review->getNota() << endl;
@@ -102,7 +102,7 @@ void ReviewTest::sucessful_grade_test_block(unsigned int value) {
 void ReviewTest::failure_grade_test_block(unsigned int value) {
     cout << "Testando valor inválido" << endl;
     try {
-        cout << "Horario testado: " << value << endl << endl;
+        cout << "Nota testada: " << value << endl << endl;
         review->setNota(value);
         cout << "Valor aceito!" << endl;
         cout << "O valor atual é: " << review->getNota() << endl;
