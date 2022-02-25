@@ -67,12 +67,7 @@ void Date::setDate(string date) {
 }
 
 void Date::validate(unsigned int day, string month, unsigned int year) {
-    string day_string = to_string(day);
-    string year_string = to_string(year);
 
-    //if (!regex_match(day_string + "-" + month + "-" + year_string, regex("[0-9]* (-) [A-z] [a-z]* (-) [0-9]*")))
-    //    throw invalid_argument("A data deve ter o formato DD-MES-AAAA");
- 
     if (day < 1 || day > 31)
         throw invalid_argument("O dia tem que ser ente 1 e 31");
 

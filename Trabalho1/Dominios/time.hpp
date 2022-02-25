@@ -1,3 +1,5 @@
+#ifndef TIME
+#define TIME
 #include <string>
 #include <iostream>
 using namespace std;
@@ -48,3 +50,5 @@ inline string Time::getTime() {
 }
 
 inline Time::Time(){};
+
+#endif

@@ -12,7 +12,7 @@ int SessionTest::run() {
     sucessful_time_test_block("23:59");
 
     failure_date_test_block("18-Oct-1999");
-    sucessful_date_test_block("18-Oct-2001");
+    sucessful_date_test_block("18-Out-2001");
 
     failure_language_test_block("Castrejo");
     sucessful_language_test_block("Hindi");

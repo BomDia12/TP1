@@ -32,6 +32,8 @@ domain_tests.exe: domain_tests.cpp domain_tests.hpp
 
 entity_tests.exe: entity_tests.cpp entity_tests.hpp
 	g++ -std=c++17 -Wall ./Testes/Entidades/review_test.o	\
+						 ./Testes/Entidades/excurcao_test.o \
+						 ./Testes/Entidades/session_test.o  \
 						 ./Dominios/nota.o					\
 						 ./Dominios/city.o					\
 						 ./Dominios/time.o					\
@@ -45,8 +47,6 @@ entity_tests.exe: entity_tests.cpp entity_tests.hpp
 						 ./Entidades/excurcao.o				\
 						 ./Entidades/review.o				\
 						 ./Entidades/session.o				\
-						 ./Testes/Entidades/excurcao_test.o \
-						 ./Testes/Entidades/session_test.o  \
 						 entity_tests.cpp -o entity_tests.exe
 
 clean:
