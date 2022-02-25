@@ -25,6 +25,10 @@ int main() {
     if (title.run() == 1)
         return 1;
     
+    EmailTest email = EmailTest();
+    if (email.run() == 1)
+        return 1;
+
     CodigoTest codigo = CodigoTest();
     if (codigo.run() == 1)
         return 1;
