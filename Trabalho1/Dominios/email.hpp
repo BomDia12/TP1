@@ -12,6 +12,12 @@ class Email {
         string email;
         void validate(string email);
     public:
+
+        /**
+         * @brief Construtor padrão do domínio email
+         */
+        Email();
+
         /**
          * Cria um novo email caso o valor passado seja valido 
          * 
@@ -41,3 +47,5 @@ class Email {
 inline string Email::getEmail() {
     return email;
 }
+
+inline Email::Email(){};

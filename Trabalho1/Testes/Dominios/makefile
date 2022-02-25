@@ -1,6 +1,6 @@
 all: name_test.o codigo_test.o city_test.o date_test.o time_test.o  \
      duration_test.o nota_test.o description_test.o language_test.o \
-	 password_test.o address_test.o title_test.o
+	 password_test.o address_test.o title_test.o email_test.o
 
 
 codigo_test.o: codigo_test.cpp
@@ -38,6 +38,9 @@ password_test.o: password_test.cpp
 
 title_test.o: title_test.cpp
 	g++ -std=c++17 -Wall -c ../../Dominios/title.o title_test.cpp
+
+email_test.o: email_test.cpp email_test.hpp
+	g++ -std=c++17 -Wall -c email_test.cpp
 
 clean:
 	rm -rf *.o *.exe
