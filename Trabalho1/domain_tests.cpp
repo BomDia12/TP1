@@ -21,6 +21,10 @@ int main() {
     if (city.run() == 1)
         return 1;
 
+    TitleTest title = TitleTest();
+    if (title.run() == 1)
+        return 1;
+    
     CodigoTest codigo = CodigoTest();
     if (codigo.run() == 1)
         return 1;

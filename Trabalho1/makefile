@@ -26,6 +26,8 @@ domain_tests.exe: domain_tests.cpp domain_tests.hpp
 						  ./Dominios/duration.o				   	\
 						  ./Testes/Dominios/description_test.o 	\
 						  ./Dominios/description.o			   	\
+						  ./Testes/Dominios/title_test.o		\
+						  ./Dominios/title.o					\
 						   domain_tests.cpp -o domain_tests.exe
 
 entity_tests.exe: entity_tests.cpp entity_tests.hpp

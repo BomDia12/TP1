@@ -1,8 +1,10 @@
 #include <string>
 #include <iostream>
-
 using namespace std;
 
+/**
+ * @author Gabriel Cruz - 200049038
+ */
 class Title {
     private:
         string title;
