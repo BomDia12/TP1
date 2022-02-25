@@ -2,6 +2,10 @@
 #define EXCURCAO_TEST
 #include "../../Entidades/excurcao.hpp"
 
+/**
+ * @author Arthur Motta Furtado 200014935
+*/
+
 class ExcurcaoTest {
     private:
         inline static const int sucess = 0;

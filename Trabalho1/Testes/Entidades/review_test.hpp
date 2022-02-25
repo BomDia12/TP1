@@ -3,6 +3,10 @@
 #include "../../Entidades/review.hpp"
 using namespace std;
 
+/**
+ * @author Arthur Motta Furtado 200014935
+*/
+
 class ReviewTest {
     private:
         inline static const int sucess = 0;

@@ -3,6 +3,10 @@
 #include "../../Entidades/user.hpp"
 using namespace std;
 
+/**
+ * @author Gabriel Cruz Vaz Santos 200049038
+*/
+
 class UserTest {
     private:
         inline static const int sucess = 0;

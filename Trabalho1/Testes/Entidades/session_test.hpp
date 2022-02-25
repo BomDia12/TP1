@@ -3,6 +3,10 @@
 #include "../../Entidades/session.hpp"
 using namespace std;
 
+/**
+* @author Pedro Venzi - 200042696
+*/
+
 class SessionTest {
     private:
         inline static const int sucess = 0;
