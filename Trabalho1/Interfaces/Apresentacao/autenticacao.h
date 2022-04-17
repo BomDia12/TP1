@@ -1,5 +1,5 @@
-#ifndef INTERFACE_AUTENTICACAO
-#define INTERFACE_AUTENTICACAO
+#ifndef INTERFACE_A_AUTENTICACAO
+#define INTERFACE_A_AUTENTICACAO
 
 #include "../../Entidades/user.hpp"
 #include "../../Dominios/email.hpp"
@@ -9,6 +9,7 @@
 class IApresentacaoAutenticacao {
     public:
         virtual bool autenticar(Email*, Password*) = 0;
+        virtual void setPointerService(IServicoAutenticacao*) = 0;
         virtual ~IApresentacaoAutenticacao(){};
 };
-#endif
+#endif;
