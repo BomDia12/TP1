@@ -2,41 +2,13 @@ all: # domain_tests.exe entity_tests.exe
 	+$(MAKE) -C Dominios
 	+$(MAKE) -C Entidades
 	+$(MAKE) -C Testes
-	g++ -std=c++17 -Wall ./Testes/Dominios/address_test.o	   	\
-						  ./Dominios/address.o				   	\
-						  ./Testes/Dominios/password_test.o	   	\
-						  ./Dominios/password.o				   	\
-						  ./Testes/Dominios/time_test.o        	\
-	 					  ./Dominios/time.o			           	\
-						  ./Testes/Dominios/nota_test.o        	\
-						  ./Dominios/nota.o				       	\
-						  ./Testes/Dominios/name_test.o        	\
-						  ./Dominios/name.o				       	\
-						  ./Testes/Dominios/date_test.o			\
-						  ./Dominios/date.o						\
-						  ./Testes/Dominios/city_test.o			\
-						  ./Dominios/city.o						\
-						  ./Testes/Dominios/codigo_test.o		\
-						  ./Dominios/codigo.o					\
-						  ./Testes/Dominios/language_test.o    	\
-						  ./Dominios/language.o				   	\
-						  ./Testes/Dominios/duration_test.o   	\
-						  ./Dominios/duration.o				   	\
-						  ./Testes/Dominios/description_test.o 	\
-						  ./Dominios/description.o			   	\
-						  ./Testes/Dominios/title_test.o		\
-						  ./Dominios/title.o					\
-						  ./Testes/Dominios/email_test.o		\
-						  ./Dominios/email.o					\
-						  ./Entidades/excurcao.o				\
-						  ./Entidades/review.o					\
-						  ./Entidades/session.o					\
-						  ./Testes/Entidades/review_test.o		\
-						  ./Testes/Entidades/excurcao_test.o	\
-						  ./Testes/Entidades/session_test.o		\
-						  ./Testes/Entidades/user_test.o		\
-						  ./Entidades/user.o					\
-						  main.cpp -o main.exe
+	+$(MAKE) -C Interfaces
+	+$(MAKE) -C Controllers
+	g++ -std=c++17 -Wall ./Testes/Dominios/*.o  \
+	                     ./Dominios/*.o         \
+	                     ./Entidades/*.o        \
+	                     ./Testes/Entidades/*.o \
+	                     main.cpp -o main.exe
 
 clean:
 	rm -rf ./*/*.o ./*/*/*.exe ./*/*/*.o
