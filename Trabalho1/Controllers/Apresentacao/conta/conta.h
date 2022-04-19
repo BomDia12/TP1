@@ -7,7 +7,7 @@
 #include "../../../Dominios/password.hpp"
 #include "../../../Dominios/name.hpp"
 #include "../../../Interfaces/Apresentacao/conta.h"
-//#include "../../../Interfaces/Servicos/conta.h"
+#include "../../../Interfaces/Servicos/conta.h"
 
 using namespace std;
 
@@ -15,35 +15,20 @@ using namespace std;
 
 class CntrApresentacaoConta:public IApresentacaoConta {
     private:
-        //IServicoConta *servicoConta;
-        //IServicoExcurssao *servicoExcursao;
-        //IServicoAvaliacao *servicoAvaliacao;
-        //IServicoSessao *servicoSessao;
+        IServicoConta *servicoConta;
         void consultarDadosPessoais();
+        void editar();
+        void excluir();
     public:
         void executar(Email);
         void cadastrar();
-        //void setPointerServicoConta(IServicoConta *servicoConta);
-        //void setPointerServicoExcursao(IServicoExcursao*);
-        //void setPointerServicoAvaliacao(IServicoAvaliacao*);
-        //void setPointerServicosessao(IServicosessao*);
+        void setPointerService(IServicoConta*);
         
 };
 
-/* inline void CntrApresentacaoConta::setPointerServicoConta(IServicoConta *servicoConta) {
+inline void CntrApresentacaoConta::setPointerService(IServicoConta *servicoConta) {
     this->servicoConta = servicoConta;
 }
 
-inline void CntrApresentacaoConta::setPointerServicoExcursao(IServicoExcursao *servicoExcursao) {
-    this->servicoExcursao = servicoExcursao;
-}
-
-inline void CntrApresentacaoAvaliacao::setPointerServicoAvaliacao(IServicoAvaliacao *servicoAvaliacao) {
-    this->servicoAvaliacao = servicoAvaliacao;
-}
-
-inline void CntrApresentacaoSessao::setPointerServicoSessao(IServicoSessao *servicoSessao) {
-    this->servicoSessao = servicoSessao;
-} */
 
 #endif;
