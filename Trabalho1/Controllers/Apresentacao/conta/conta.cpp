@@ -119,7 +119,28 @@ void CntrApresentacaoConta::excluir() {
     cin >> campo;
 
     switch(campo){
-        case 1: apresentar = false/* servicoConta->excluirConta() */; ////////////
+        case 1: apresentar = false/* servicoConta->excluirConta(user) */; ////////////
+                break;
+        case 2: apresentar = false;
+                break;
+    }
+}
+
+void CntrApresentacaoConta::editar() {
+    string texto1 = "Tem Certeza que deseja editar sua conta?";
+    string texto2 = "1 - Editar";
+    string texto3 = "2 - Retornar";
+
+    int campo;
+    bool apresentar = true;
+    
+    cout << texto1 << endl;
+    cout << texto2 << endl;
+    cout << texto3 << endl;
+    cin >> campo;
+
+    switch(campo){
+        case 1: apresentar = false/* servicoConta->editarConta(user) */; ////////////
                 break;
         case 2: apresentar = false;
                 break;
