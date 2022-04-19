@@ -5,3 +5,4 @@ latex
 html
 *.out
 .vscode
+/doxygen
