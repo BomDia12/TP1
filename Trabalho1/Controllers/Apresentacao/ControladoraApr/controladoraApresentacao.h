@@ -14,12 +14,12 @@ class CntrApresentacaoControle{
         Email email;
         IApresentacaoAutenticacao *cntrApresentacaoAutenticacao;
         IApresentacaoConta *cntrApresentacaoConta;
-        //IApresentacaoExcursao *cntrApresentacaoExcursao;
+        IApresentacaoExcursao *cntrApresentacaoExcursao;
     public:
         void executar();
         void setCntrApresentacaoAutenticacao(IApresentacaoAutenticacao*);
         void setCntrApresentacaoConta(IApresentacaoConta*);
-        //void setCntrApresentacaoExcursao(IApresentacaoExcursao*);
+        void setCntrApresentacaoExcursao(IApresentacaoExcursao*);
 };
 
 inline void CntrApresentacaoControle::setCntrApresentacaoAutenticacao(IApresentacaoAutenticacao *cntr){
@@ -30,8 +30,8 @@ inline void CntrApresentacaoControle::setCntrApresentacaoConta(IApresentacaoCont
             cntrApresentacaoConta = cntr;
 }
 
-/* inline void CntrApresentacaoControle::setCntrApresentacaoExcursao(IApresentacaoExcursao *cntr){
+inline void CntrApresentacaoControle::setCntrApresentacaoExcursao(IApresentacaoExcursao *cntr){
     cntrApresentacaoExcursao = cntr;
-} */
+} 
 
 #endif;
