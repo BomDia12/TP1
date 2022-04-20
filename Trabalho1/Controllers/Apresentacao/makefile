@@ -4,3 +4,4 @@ all:
 	+$(MAKE) -C conta
 	+$(MAKE) -C excursao
 #	+$(MAKE) -C sessao
+	+$(MAKE) -C ControladoraApr

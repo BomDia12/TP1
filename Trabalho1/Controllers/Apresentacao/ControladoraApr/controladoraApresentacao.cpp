@@ -1,8 +1,6 @@
 #include "controladoraApresentacao.h"
 
-
-
-void CntrApresentacaoControle::executar(){
+void CntrApresentacaoControle::executar() {
 
 
     char texto1[]="Selecione um dos servicos : ";

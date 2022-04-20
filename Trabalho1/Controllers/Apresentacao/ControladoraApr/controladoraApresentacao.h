@@ -34,4 +34,4 @@ inline void CntrApresentacaoControle::setCntrApresentacaoExcursao(IApresentacaoE
     cntrApresentacaoExcursao = cntr;
 } 
 
-#endif;
+#endif

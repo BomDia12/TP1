@@ -69,6 +69,11 @@ int main() {
     if (user.run() == 1)
         return 1;
 
+    cout << endl << endl << "Trabalho 2" << endl << endl;
+
+    CntrApresentacaoControle cntr = CntrApresentacaoControle();
+    cntr.executar();
+
     return 0;
 }
 
