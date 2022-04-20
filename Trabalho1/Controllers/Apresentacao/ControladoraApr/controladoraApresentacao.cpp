@@ -52,7 +52,7 @@ void CntrApresentacaoControle::executar(){
                             switch(campo){
                                 case 1: cntrApresentacaoConta->executar(email);
                                         break;
-                                case 2: apresentar = false /*  cntrApresentacaoExcursao->executar(email) */;
+                                case 2: cntrApresentacaoExcursao->executar(email) ;
                                         break;
                                 case 3: apresentar = false;
                                         break;
@@ -60,12 +60,12 @@ void CntrApresentacaoControle::executar(){
                         }
                     }
                     else {
-                        cout << texto10 << endl;                                                // Imprime mensagem.
+                        cout << texto10 << endl;                                                
                     }
                     break;
             case 2: cntrApresentacaoConta->cadastrar();
                     break;
-            case 3: apresentar = false;/* cntrApresentacaoExcursao->executar(); */
+            case 3: cntrApresentacaoExcursao->executar();
                     break;
             case 4: apresentar = false;
                     break;
