@@ -14,8 +14,10 @@
 
 class IApresentacaoExcursao {
     public:
-        virtual bool cadastrar(Codigo*, Address*, City*, Nota*, Title*, Duration*, Description*) = 0;
-        virtual bool editar(Address*, City*, Title*, Duration*, Description*) = 0;
+        virtual void executar() = 0;
+        virtual void executar(Email) = 0;
+        virtual bool cadastrar() = 0;
+        virtual bool editar(Codigo*) = 0;
         virtual bool excluir(Codigo*) = 0;
         virtual void setPointerService(IServicoExcursao*) = 0;
         virtual ~IApresentacaoExcursao(){};
