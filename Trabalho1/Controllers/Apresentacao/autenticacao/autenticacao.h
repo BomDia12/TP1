@@ -17,7 +17,7 @@ class CntrApresentacaoAutenticacao:public IApresentacaoAutenticacao {
     private:
         IServicoAutenticacao *servico;
     public:
-        bool autenticar(Email*, Password*);
+        bool autenticar(Email*);
         void setPointerService(IServicoAutenticacao *servico);
 };
 
