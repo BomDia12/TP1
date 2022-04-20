@@ -10,9 +10,9 @@
 
 class IServicoConta {
     public:
-        virtual bool cadastrarConta(User) = 0;
-        virtual bool excluirConta(User) = 0;
-        virtual bool editarConta(User) = 0;
+        virtual bool cadastrarConta(User*) = 0;
+        virtual bool excluirConta(Email*) = 0;
+        virtual bool editarConta(Email*, Name, Password) = 0;
         virtual ~IServicoConta(){};
 };
 #endif;

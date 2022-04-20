@@ -2,7 +2,7 @@
 
 //author: Gabriel Cruz Vaz Santos 200049038
 
-void CntrApresentacaoConta::executar(Email email) {
+void CntrApresentacaoConta::executar(Email *email) {
     string texto1 = "Selecione um dos servicos : ";
     string texto4 = "1 - Consultar meus dados pessoais.";
     string texto2 = "2 - Editar meus dados pessoais";
@@ -27,13 +27,13 @@ void CntrApresentacaoConta::executar(Email email) {
         cin >> campo1;
 
         switch(campo1){
-            case 1: consultarDadosPessoais();
+            case 1: consultarDadosPessoais(email);
                     break;
 
-            case 2: excluir();  //implementar
+            case 2: excluir(email);  //implementar
                     break;
 
-            case 3: editar();  //implementar
+            case 3: editar(email);  //implementar
                     break;
 
             case 4: apresentar = false;  //implementar
@@ -84,12 +84,12 @@ void CntrApresentacaoConta::cadastrar() {
     }
 
 
-    User user;
+    User *user;
 
     try{
-        user.setName(string(campo1));
-        user.setEmail(string(campo2));
-        password.setPassword(string(campo3));
+        user->setName(string(campo1));
+        user->setEmail(string(campo2));
+        user->setPassword(string(campo3));
     }
     catch(invalid_argument &exp){
         cout << userError << endl;                                                                               // Leitura de caracter digitado.
@@ -105,7 +105,7 @@ void CntrApresentacaoConta::cadastrar() {
 
 }
 
-void CntrApresentacaoConta::excluir() {
+void CntrApresentacaoConta::excluir(Email *email) {
     string texto1 = "Tem Certeza que deseja excluir sua conta?";
     string texto2 = "1 - Excluir";
     string texto3 = "2 - Retornar";
@@ -119,20 +119,27 @@ void CntrApresentacaoConta::excluir() {
     cin >> campo;
 
     switch(campo){
-        case 1: apresentar = false/* servicoConta->excluirConta(user) */; ////////////
+        case 1: servicoConta->excluirConta(email);
                 break;
         case 2: apresentar = false;
                 break;
     }
 }
 
-void CntrApresentacaoConta::editar() {
+void CntrApresentacaoConta::editar(Email *email) {
     string texto1 = "Tem Certeza que deseja editar sua conta?";
     string texto2 = "1 - Editar";
     string texto3 = "2 - Retornar";
+    string texto4 = "Novo Nome:";
+    string texto5 = "Nova Senha:";
+    string paramsError = "Parâmetro Incorreto, por favor tente novamente";
 
     int campo;
+    string campo1, campo2;
     bool apresentar = true;
+    Name name;
+    Password password;
+
     
     cout << texto1 << endl;
     cout << texto2 << endl;
@@ -140,8 +147,23 @@ void CntrApresentacaoConta::editar() {
     cin >> campo;
 
     switch(campo){
-        case 1: apresentar = false/* servicoConta->editarConta(user) */; ////////////
-                break;
+        case 1:
+            cout << texto4 << " ";
+            cin >> campo1;  
+            cout << texto5 << " ";
+            cin >> campo2;
+
+            try{
+                name.setName(string(campo1));
+                password.setPassword(string(campo2));
+            }
+            catch(invalid_argument &exp){
+                cout << paramsError << endl;                                                                               // Leitura de caracter digitado.
+                return;
+            }
+
+            servicoConta->editarConta(email, name, password); 
+            break;
         case 2: apresentar = false;
                 break;
     }

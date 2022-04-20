@@ -16,11 +16,11 @@ using namespace std;
 class CntrApresentacaoConta:public IApresentacaoConta {
     private:
         IServicoConta *servicoConta;
-        void consultarDadosPessoais();
-        void editar();
-        void excluir();
+        void consultarDadosPessoais(Email*);
+        void editar(Email*);
+        void excluir(Email*);
     public:
-        void executar(Email);
+        void executar(Email*);
         void cadastrar();
         void setPointerService(IServicoConta*);
         
