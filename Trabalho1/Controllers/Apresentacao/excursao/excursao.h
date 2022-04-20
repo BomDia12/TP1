@@ -22,10 +22,10 @@ class CntrApresentacaoExcursao:public IApresentacaoExcursao {
     private:
         IServicoExcursao *servico;
         bool editar(Codigo*);
-        bool excluir(Codigo*);
+        //bool excluir(Codigo*);
     public:
         void executar();
-        void executar(Email);
+        //void executar(Email);
         bool cadastrar();
         void setPointerService(IServicoExcursao *servico);
 };

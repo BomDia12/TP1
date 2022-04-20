@@ -2,7 +2,6 @@
 
 void CntrApresentacaoControle::executar() {
 
-
     char texto1[]="Selecione um dos servicos : ";
     char texto2[]="1 - Acessar sistema.";
     char texto3[]="2 - Cadastrar usuario.";

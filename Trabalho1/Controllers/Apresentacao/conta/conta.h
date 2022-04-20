@@ -16,7 +16,7 @@ using namespace std;
 class CntrApresentacaoConta:public IApresentacaoConta {
     private:
         IServicoConta *servicoConta;
-        void consultarDadosPessoais(Email*);
+        //void consultarDadosPessoais(Email*);
         void editar(Email*);
         void excluir(Email*);
     public:

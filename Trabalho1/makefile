@@ -7,5 +7,5 @@ all: # domain_tests.exe entity_tests.exe
 	g++ -std=c++17 -Wall ./*/*/*/*.o ./*/*/*.o ./*/*.o main.cpp -o main.exe
 
 clean:
-	rm -rf ./*/*.o ./*/*/*.exe ./*/*/*.o
+	rm -rf ./*/*.o ./*/*/*.exe ./*/*/*.o ./*/*/*/*.o
 	rm -rf *.exe

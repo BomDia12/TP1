@@ -71,7 +71,10 @@ int main() {
 
     cout << endl << endl << "Trabalho 2" << endl << endl;
 
+    CntrApresentacaoAutenticacao *aut = new CntrApresentacaoAutenticacao();
+
     CntrApresentacaoControle cntr = CntrApresentacaoControle();
+    cntr.setCntrApresentacaoAutenticacao(aut);
     cntr.executar();
 
     return 0;

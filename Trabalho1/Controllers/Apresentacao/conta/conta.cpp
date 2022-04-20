@@ -27,7 +27,8 @@ void CntrApresentacaoConta::executar(Email *email) {
         cin >> campo1;
 
         switch(campo1){
-            case 1: consultarDadosPessoais(email);
+            case 1: //consultarDadosPessoais(email);
+                    cout << "Seus dados aparareceriam aqui" << endl;
                     break;
 
             case 2: excluir(email);  //implementar

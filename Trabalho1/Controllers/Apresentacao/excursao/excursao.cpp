@@ -1,6 +1,10 @@
 #include "excursao.h"
 
 
+void CntrApresentacaoExcursao::executar() {
+    cout << "Se deu mal" << endl;
+}
+
 bool CntrApresentacaoExcursao::cadastrar() {
 
     string text1 = "Digite o Endereco:";
