@@ -2,13 +2,15 @@
 
 //author: Gabriel Cruz Vaz Santos 200049038
 
-bool CntrApresentacaoAutenticacao::autenticar(Email *email, Password *password) {
+bool CntrApresentacaoAutenticacao::autenticar(Email *email) {
 
     string text1 = "Digite seu Email:";
     string text2 = "Digite sua senha:";
     string text3 = "Campos Incorretos. Pressione ENTER para tentar novamente";
 
     string campo1, campo2;
+
+    Password *password;
 
     while(true) {
         cout << text1 << " " << endl;
