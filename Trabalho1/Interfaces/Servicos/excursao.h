@@ -1,7 +1,7 @@
 #ifndef INTERFACE_S_EXCURSAO
 #define INTERFACE_S_EXCURSAO
 
-#include "../../../Entidades/review.hpp"
+#include "../../../Entidades/excurcao.hpp"
 #include "../../../Dominios/address.hpp"
 #include "../../../Dominios/city.hpp"
 #include "../../../Dominios/codigo.hpp"
@@ -14,7 +14,7 @@
 
 class IServicoExcursao {
     public:
-        virtual bool cadastrar(Review*) = 0;
+        virtual bool cadastrar(Excurcao*) = 0;
         virtual bool editar(Codigo*, Address, City, Title, Duration, Description) = 0;
         virtual bool excluir(Codigo*) = 0;
         virtual ~IServicoExcursao(){}

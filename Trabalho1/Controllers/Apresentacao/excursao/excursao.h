@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string.h>  
 #include "../../../Entidades/user.hpp"
+#include "../../../Entidades/excurcao.hpp"
 #include "../../../Dominios/address.hpp"
 #include "../../../Dominios/city.hpp"
 #include "../../../Dominios/codigo.hpp"
@@ -20,10 +21,12 @@ using namespace std;
 class CntrApresentacaoExcursao:public IApresentacaoExcursao {
     private:
         IServicoExcursao *servico;
-    public:
-        bool cadastrar(Address*, City*, Codigo*, Title*, Duration*, Description*);
-        bool editar(Address*, City*, Title*, Duration*, Description*);
+        bool editar(Codigo*);
         bool excluir(Codigo*);
+    public:
+        void executar();
+        void executar(Email);
+        bool cadastrar();
         void setPointerService(IServicoExcursao *servico);
 };
 
