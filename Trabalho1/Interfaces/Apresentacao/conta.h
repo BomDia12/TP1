@@ -5,6 +5,7 @@
 #include "../../Dominios/email.hpp"
 #include "../../Dominios/password.hpp"
 #include "../../Dominios/name.hpp"
+#include "../Servicos/conta.h"
 
 //author Gabriel Cruz Vaz Santos - 200049038
 class IApresentacaoConta {

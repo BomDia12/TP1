@@ -1,3 +1,6 @@
+#ifndef STUBS
+#define STUBS
+
 #include "../Interfaces/Servicos/autenticacao.h"
 #include "../Entidades/user.hpp"
 #include "../Dominios/email.hpp"
@@ -9,3 +12,7 @@ class StubServicoAutenticacao:public IServicoAutenticacao {
     public:
         bool autenticar(Email, Password);
 };
+
+inline const string StubServicoAutenticacao::INVALIDO = "0000000000";
+
+#endif

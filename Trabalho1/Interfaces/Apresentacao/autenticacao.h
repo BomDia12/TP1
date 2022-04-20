@@ -4,6 +4,7 @@
 #include "../../Entidades/user.hpp"
 #include "../../Dominios/email.hpp"
 #include "../../Dominios/password.hpp"
+#include "../Servicos/autenticacao.h"
 
  //author Gabriel Cruz Vaz Santos - 200049038
 class IApresentacaoAutenticacao {

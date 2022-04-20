@@ -8,6 +8,7 @@
 #include "../../../Dominios/password.hpp"
 #include "../../../Interfaces/Apresentacao/autenticacao.h"
 #include "../../../Interfaces/Servicos/autenticacao.h"
+#include "../../../stubs/stubs.h"
 
 using namespace std;
 
