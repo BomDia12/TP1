@@ -26,4 +26,4 @@ inline void CntrApresentacaoAutenticacao::setPointerService(IServicoAutenticacao
     this->servico = servico;
 }
 
-#endif;
+#endif

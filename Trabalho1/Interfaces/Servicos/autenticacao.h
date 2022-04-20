@@ -12,4 +12,4 @@ class IServicoAutenticacao {
         virtual bool autenticar(Email, Password) = 0;
         virtual ~IServicoAutenticacao(){}
 };
-#endif;
+#endif

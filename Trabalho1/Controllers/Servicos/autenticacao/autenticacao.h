@@ -13,4 +13,4 @@ class CntrServicoAutenticacao: public IServicoAutenticacao {
     public:
         bool autenticar(Email, Password);
 };
-#endif;
+#endif

@@ -31,4 +31,4 @@ inline void CntrApresentacaoExcursao::setPointerService(IServicoExcursao *servic
     this->servico = servico;
 }
 
-#endif;
+#endif

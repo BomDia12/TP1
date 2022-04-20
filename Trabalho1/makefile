@@ -2,7 +2,6 @@ all: # domain_tests.exe entity_tests.exe
 	+$(MAKE) -C Dominios
 	+$(MAKE) -C Entidades
 	+$(MAKE) -C Testes
-	+$(MAKE) -C Interfaces
 	+$(MAKE) -C Controllers
 	+$(MAKE) -C stubs
 	g++ -std=c++17 -Wall ./*/*/*.o ./*/*.o main.cpp -o main.exe

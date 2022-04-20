@@ -15,4 +15,4 @@ class IServicoConta {
         virtual bool editarConta(Email*, Name, Password) = 0;
         virtual ~IServicoConta(){};
 };
-#endif;
+#endif

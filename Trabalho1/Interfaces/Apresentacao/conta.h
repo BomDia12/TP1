@@ -17,4 +17,4 @@ class IApresentacaoConta {
         virtual void setPointerService(IServicoConta*) = 0;      
         virtual ~IApresentacaoConta(){};
 };
-#endif;
+#endif

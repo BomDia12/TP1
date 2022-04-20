@@ -20,4 +20,4 @@ class CntrServicoAutenticacao: public IServicoExcursao {
         bool editar(Address, City, Title, Duration, Description);
         bool excluir(Codigo);
 };
-#endif;
+#endif

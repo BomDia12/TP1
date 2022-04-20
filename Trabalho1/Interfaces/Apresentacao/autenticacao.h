@@ -13,4 +13,4 @@ class IApresentacaoAutenticacao {
         virtual void setPointerService(IServicoAutenticacao*) = 0;
         virtual ~IApresentacaoAutenticacao(){};
 };
-#endif;
+#endif
