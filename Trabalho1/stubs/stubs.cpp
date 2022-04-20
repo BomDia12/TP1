@@ -32,3 +32,27 @@ bool StubServicoConta::editarConta(Email *email, Name name, Password password) {
 
     return true;
 }
+
+// Autor: Arthur Mota Furtado - 200014935
+bool StubServicoExcursao::cadastrar(Excurcao *obj) {
+    if (obj->getCodigo().compare(INVALIDO) == 0)
+        return false;
+
+    return true;
+};
+
+// Autor: Arthur Mota Furtado - 200014935
+bool StubServicoExcursao::editar(Codigo *codigo, Address a, City b, Title c, Duration d, Description e) {
+    if (codigo->getCodigo().compare(INVALIDO))
+        return false;
+    
+    return true;
+}
+
+// Autor: Arthur Mota Furtado - 200014935
+bool StubServicoExcursao::excluir(Codigo *codigo) {
+    if (codigo->getCodigo().compare(INVALIDO))
+        return false;
+    
+    return true;
+}

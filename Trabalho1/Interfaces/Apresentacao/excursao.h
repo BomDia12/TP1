@@ -9,8 +9,7 @@
 #include "../../Dominios/title.hpp"
 #include "../../Dominios/duration.hpp"
 #include "../../Dominios/description.hpp"
-#include "../../Interfaces/Apresentacao/excursao.h"
-#include "../../Interfaces/Servicos/excursao.h"
+#include "../Servicos/excursao.h"
 
 class IApresentacaoExcursao {
     public:

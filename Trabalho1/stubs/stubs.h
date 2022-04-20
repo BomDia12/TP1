@@ -2,14 +2,15 @@
 #define STUBS
 
 #include "../Interfaces/Servicos/autenticacao.h"
+#include "../Interfaces/Servicos/excursao.h"
 #include "../Interfaces/Servicos/conta.h"
-#include "../Entidades/user.hpp"
-#include "../Dominios/email.hpp"
 #include "../Dominios/password.hpp"
+#include "../Dominios/email.hpp"
+#include "../Entidades/user.hpp"
 
 class StubServicoAutenticacao:public IServicoAutenticacao {
     private:
-        static const string INVALIDO;
+        inline static const string INVALIDO = "0000000000";
     public:
         bool autenticar(Email, Password);
 };
@@ -17,15 +18,21 @@ class StubServicoAutenticacao:public IServicoAutenticacao {
 // Autor: Arthur Mota Furtado - 200014935
 class StubServicoConta: public IServicoConta {
     private:
-        static const string EMAIL_INVALIDO;
+        inline static const string EMAIL_INVALIDO = "email@dominio";
     public:
         bool cadastrarConta(User*);
         bool excluirConta(Email*);
         bool editarConta(Email*, Name, Password);
 };
 
-inline const string StubServicoAutenticacao::INVALIDO = "0000000000";
-
-inline const string StubServicoConta::EMAIL_INVALIDO = "email@dominio";
+// Autor: Arthur Mota Furtado - 200014935
+class StubServicoExcursao: public IServicoExcursao {
+    private:
+        inline static const string INVALIDO = "1234561";
+    public:
+        bool cadastrar(Excurcao*);
+        bool editar(Codigo*, Address, City, Title, Duration, Description);
+        bool excluir(Codigo*);
+};
 
 #endif
